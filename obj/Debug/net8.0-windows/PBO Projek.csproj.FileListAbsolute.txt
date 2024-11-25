@@ -1,0 +1,24 @@
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.HalamanUtama.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Login.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.Produk.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.GeneratedMSBuildEditorConfig.editorconfig
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfoInputs.cache
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfo.cs
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.CoreCompileInputs.cache
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.exe
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.deps.json
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.runtimeconfig.json
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.dll
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.pdb
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.dll
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\refint\PBO Projek.dll
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.pdb
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.genruntimeconfig.cache
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\ref\PBO Projek.dll
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\Npgsql.dll
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.AssemblyReference.cache
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.Cashier.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.Up2Date
