@@ -47,5 +47,10 @@ namespace PBO_Projek.View
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void V_Kasir_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
