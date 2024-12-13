@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PBO Projek")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b307234fe75e4f163681b760e9ee74dc754af52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7a896b86f4e537aec3cd562eca680728c8f3de9")]
 [assembly: System.Reflection.AssemblyProductAttribute("PBO Projek")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PBO Projek")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -325,19 +325,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BOBI\\.nuget\\packages\\": {}
+    "C:\\Users\\syilv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\PBO\\PBO-11\\PBO Projek.csproj",
+      "projectUniqueName": "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\PBO Projek.csproj",
       "projectName": "PBO Projek",
-      "projectPath": "H:\\PBO\\PBO-11\\PBO Projek.csproj",
-      "packagesPath": "C:\\Users\\BOBI\\.nuget\\packages\\",
-      "outputPath": "H:\\PBO\\PBO-11\\obj\\",
+      "projectPath": "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\PBO Projek.csproj",
+      "packagesPath": "C:\\Users\\syilv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BOBI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\syilv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -397,7 +397,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
