@@ -29,3 +29,35 @@ D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.V_Login.resources
 D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.V_Produk.resources
 D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.V_SewaAlat.resources
 D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.V_Absen.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\PBO Projek.exe
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\PBO Projek.deps.json
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\PBO Projek.runtimeconfig.json
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.csproj.AssemblyReference.cache
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.Properties.Resources.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_Absen.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_Dashboard.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_HalamanUtama.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_Kasir.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.V_Login.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_Produk.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_SewaAlat.resources
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfoInputs.cache
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfo.cs
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.csproj.CoreCompileInputs.cache
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.sourcelink.json
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.csproj.Up2Date
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\refint\PBO Projek.dll
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\PBO Projek.genruntimeconfig.cache
+C:\Users\syilv\PROJECT PBO 11\PBO-11\obj\Debug\net8.0-windows\ref\PBO Projek.dll

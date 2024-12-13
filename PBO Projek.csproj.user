@@ -4,6 +4,9 @@
     <Compile Update="View\V_Absen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\V_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\V_Kasir.cs">
       <SubType>Form</SubType>
     </Compile>

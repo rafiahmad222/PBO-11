@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PBO\\PBO Projek\\PBO Projek.csproj": {}
+    "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\PBO Projek.csproj": {}
   },
   "projects": {
-    "D:\\PBO\\PBO Projek\\PBO Projek.csproj": {
+    "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\PBO Projek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PBO\\PBO Projek\\PBO Projek.csproj",
+        "projectUniqueName": "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\PBO Projek.csproj",
         "projectName": "PBO Projek",
-        "projectPath": "D:\\PBO\\PBO Projek\\PBO Projek.csproj",
-        "packagesPath": "C:\\Users\\rafii\\.nuget\\packages\\",
-        "outputPath": "D:\\PBO\\PBO Projek\\obj\\",
+        "projectPath": "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\PBO Projek.csproj",
+        "packagesPath": "C:\\Users\\syilv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WPF\\bin\\v8\\",
-          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rafii\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+          "C:\\Users\\syilv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
@@ -80,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

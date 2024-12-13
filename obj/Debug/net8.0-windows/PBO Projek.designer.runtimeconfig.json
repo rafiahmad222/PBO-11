@@ -12,10 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\rafii\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\rafii\\.nuget\\packages",
-      "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WPF\\bin\\v8",
-      "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8"
+      "C:\\Users\\syilv\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\syilv\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
