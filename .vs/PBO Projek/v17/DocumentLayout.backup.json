@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\PBO\\PBO-11\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO-11\\view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo-11\\view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo-11\\view\\v_halamanutama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_halamanutama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -15,20 +23,12 @@
       "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_sewaalat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo-11\\view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO-11\\view\\v_absen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_absen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO-11\\view\\v_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO-11\\view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo-11\\view\\v_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 974,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "V_HalamanUtama.cs [Design]",
               "DocumentMoniker": "D:\\PBO\\PBO-11\\View\\V_HalamanUtama.cs",
               "RelativeDocumentMoniker": "View\\V_HalamanUtama.cs",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PBO\\PBO-11\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -70,20 +70,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "V_Kasir.cs",
               "DocumentMoniker": "D:\\PBO\\PBO-11\\View\\V_Kasir.cs",
               "RelativeDocumentMoniker": "View\\V_Kasir.cs",
               "ToolTip": "D:\\PBO\\PBO-11\\View\\V_Kasir.cs",
               "RelativeToolTip": "View\\V_Kasir.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAiwCQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAApwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T15:53:41.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "V_SewaAlat.cs [Design]",
               "DocumentMoniker": "D:\\PBO\\PBO-11\\View\\V_SewaAlat.cs",
               "RelativeDocumentMoniker": "View\\V_SewaAlat.cs",
@@ -93,17 +93,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "V_Kasir.cs [Design]",
               "DocumentMoniker": "D:\\PBO\\PBO-11\\View\\V_Kasir.cs",
               "RelativeDocumentMoniker": "View\\V_Kasir.cs",
-              "ToolTip": "C:\\Users\\syilv\\PROJECT PBO 11\\PBO-11\\View\\V_Kasir.cs [Design]",
+              "ToolTip": "D:\\PBO\\PBO-11\\View\\V_Kasir.cs [Design]",
+              "RelativeToolTip": "View\\V_Kasir.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:57:02.327Z"
+              "WhenOpened": "2024-12-04T15:57:02.327Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "V_Absen.cs [Design]",
               "DocumentMoniker": "D:\\PBO\\PBO-11\\View\\V_Absen.cs",
               "RelativeDocumentMoniker": "View\\V_Absen.cs",
@@ -126,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "V_Login.cs [Design]",
               "DocumentMoniker": "D:\\PBO\\PBO-11\\View\\V_Login.cs",
               "RelativeDocumentMoniker": "View\\V_Login.cs",
