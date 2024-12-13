@@ -3,72 +3,24 @@
   "WorkspaceRootPath": "D:\\PBO\\PBO Projek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\model\\akun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:model\\akun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO Projek\\view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\v_absen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_absen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\model\\alat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:model\\alat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\model\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:model\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\halamanutama.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\halamanutama.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO Projek\\view\\halamanutama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\halamanutama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\halamanutama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\halamanutama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO Projek\\view\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\cashier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\cashier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO Projek\\view\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\view\\produk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\produk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\controller\\core\\dataconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:controller\\core\\dataconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|d:\\pbo\\pbo projek\\pbo projek.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:pbo projek.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|D:\\PBO\\PBO Projek\\view\\v_sewaalat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_sewaalat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,206 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Akun.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\Model\\Akun.cs",
-              "RelativeDocumentMoniker": "Model\\Akun.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\Model\\Akun.cs",
-              "RelativeToolTip": "Model\\Akun.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T22:40:23.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Alat.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\Model\\Alat.cs",
-              "RelativeDocumentMoniker": "Model\\Alat.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\Model\\Alat.cs",
-              "RelativeToolTip": "Model\\Alat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T22:39:09.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Produk.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\Model\\Produk.cs",
-              "RelativeDocumentMoniker": "Model\\Produk.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\Model\\Produk.cs",
-              "RelativeToolTip": "Model\\Produk.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T22:37:02.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\Login.cs",
-              "RelativeDocumentMoniker": "View\\Login.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\Login.cs [Design]",
-              "RelativeToolTip": "View\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T03:24:51.73Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HalamanUtama.Designer.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\HalamanUtama.Designer.cs",
-              "RelativeDocumentMoniker": "View\\HalamanUtama.Designer.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\HalamanUtama.Designer.cs",
-              "RelativeToolTip": "View\\HalamanUtama.Designer.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:51:07.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\Login.cs",
-              "RelativeDocumentMoniker": "View\\Login.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\Login.cs",
-              "RelativeToolTip": "View\\Login.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:26:52.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.Designer.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\Login.Designer.cs",
-              "RelativeDocumentMoniker": "View\\Login.Designer.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\Login.Designer.cs",
-              "RelativeToolTip": "View\\Login.Designer.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:29:37.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HalamanUtama.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\HalamanUtama.cs",
-              "RelativeDocumentMoniker": "View\\HalamanUtama.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\HalamanUtama.cs",
-              "RelativeToolTip": "View\\HalamanUtama.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:48:05.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HalamanUtama.cs [Design]",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\HalamanUtama.cs",
-              "RelativeDocumentMoniker": "View\\HalamanUtama.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\HalamanUtama.cs [Design]",
-              "RelativeToolTip": "View\\HalamanUtama.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:40:26.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Cashier.cs [Design]",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\Cashier.cs",
-              "RelativeDocumentMoniker": "View\\Cashier.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\Cashier.cs [Design]",
-              "RelativeToolTip": "View\\Cashier.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:55:11.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Cashier.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\Cashier.cs",
-              "RelativeDocumentMoniker": "View\\Cashier.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\Cashier.cs",
-              "RelativeToolTip": "View\\Cashier.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAlwBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:55:30.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Cashier.Designer.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\Cashier.Designer.cs",
-              "RelativeDocumentMoniker": "View\\Cashier.Designer.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\Cashier.Designer.cs",
-              "RelativeToolTip": "View\\Cashier.Designer.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T18:26:33.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Produk.cs [Design]",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\Produk.cs",
-              "RelativeDocumentMoniker": "View\\Produk.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\Produk.cs [Design]",
-              "RelativeToolTip": "View\\Produk.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:42:27.038Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Produk.Designer.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\Produk.Designer.cs",
-              "RelativeDocumentMoniker": "View\\Produk.Designer.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\View\\Produk.Designer.cs",
-              "RelativeToolTip": "View\\Produk.Designer.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T18:25:20.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "dataConnection.cs",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\Controller\\Core\\dataConnection.cs",
-              "RelativeDocumentMoniker": "Controller\\Core\\dataConnection.cs",
-              "ToolTip": "D:\\PBO\\PBO Projek\\Controller\\Core\\dataConnection.cs",
-              "RelativeToolTip": "Controller\\Core\\dataConnection.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T18:03:59.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PBO Projek.csproj",
-              "DocumentMoniker": "D:\\PBO\\PBO Projek\\PBO Projek.csproj",
-              "RelativeDocumentMoniker": "PBO Projek.csproj",
-              "ToolTip": "D:\\PBO\\PBO Projek\\PBO Projek.csproj",
-              "RelativeToolTip": "PBO Projek.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-13T17:17:02.792Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -286,10 +40,57 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\PBO\\PBO Projek\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:15:34.471Z",
+              "WhenOpened": "2024-12-11T09:46:19.02Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "V_Absen.cs [Design]",
+              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\V_Absen.cs",
+              "RelativeDocumentMoniker": "View\\V_Absen.cs",
+              "ToolTip": "D:\\PBO\\PBO Projek\\View\\V_Absen.cs [Design]",
+              "RelativeToolTip": "View\\V_Absen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:02:01.867Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "V_Kasir.cs [Design]",
+              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\V_Kasir.cs",
+              "RelativeDocumentMoniker": "View\\V_Kasir.cs",
+              "ToolTip": "D:\\PBO\\PBO Projek\\View\\V_Kasir.cs [Design]",
+              "RelativeToolTip": "View\\V_Kasir.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:57:02.327Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "V_Kasir.cs",
+              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\V_Kasir.cs",
+              "RelativeDocumentMoniker": "View\\V_Kasir.cs",
+              "ToolTip": "D:\\PBO\\PBO Projek\\View\\V_Kasir.cs",
+              "RelativeToolTip": "View\\V_Kasir.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:53:41.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "V_SewaAlat.cs [Design]",
+              "DocumentMoniker": "D:\\PBO\\PBO Projek\\View\\V_SewaAlat.cs",
+              "RelativeDocumentMoniker": "View\\V_SewaAlat.cs",
+              "ToolTip": "D:\\PBO\\PBO Projek\\View\\V_SewaAlat.cs [Design]",
+              "RelativeToolTip": "View\\V_SewaAlat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:51:46.953Z"
             }
           ]
         }

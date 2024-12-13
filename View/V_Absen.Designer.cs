@@ -1,6 +1,6 @@
 ﻿namespace PBO_Projek.View
 {
-    partial class Produk
+    partial class V_Absen
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Text = "Produk";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "V_Absen";
         }
 
         #endregion

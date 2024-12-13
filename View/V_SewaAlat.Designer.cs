@@ -1,6 +1,6 @@
 ﻿namespace PBO_Projek.View
 {
-    partial class Cashier
+    partial class V_SewaAlat
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
-            // 
-            // Cashier
-            // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1920, 1050);
-            Name = "Cashier";
-            Text = "Cashier";
-            Load += Cashier_Load;
-            ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "V_SewaAlat";
         }
 
         #endregion

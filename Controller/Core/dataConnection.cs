@@ -12,7 +12,7 @@ namespace PBO_Projek.Controller.Core
     public class dataConnection
     {
         private static readonly string DB_HOST = "localhost";
-        private static readonly string DB_DATABASE = "DBSEHATIN_REV";
+        private static readonly string DB_DATABASE = "DBSEHATIasN_REV";
         private static readonly string DB_USERNAME = "postgres";
         private static readonly string DB_PASSWORD = "2";
         private static readonly string DB_PORT = "5432";

@@ -1,6 +1,6 @@
 ﻿namespace PBO_Projek.View
 {
-    partial class HalamanUtama
+    partial class V_Produk
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(201, 109);
-            label1.Name = "label1";
-            label1.Size = new Size(93, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Halooooo";
-            // 
-            // HalamanUtama
-            // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1920, 1050);
-            Controls.Add(label1);
-            Name = "HalamanUtama";
-            Text = "HalamanUtama";
-            Load += HalamanUtama_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Text = "Produk";
         }
 
         #endregion
-
-        private Label label1;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PBO_Projek.View
 {
-    public partial class Produk : Form
+    public partial class V_Absen : Form
     {
-        public Produk()
+        public V_Absen()
         {
             InitializeComponent();
         }

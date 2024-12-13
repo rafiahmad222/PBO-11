@@ -1,6 +1,3 @@
-D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.HalamanUtama.resources
-D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Login.resources
-D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.Produk.resources
 D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
 D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.GeneratedMSBuildEditorConfig.editorconfig
 D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfoInputs.cache
@@ -20,5 +17,15 @@ D:\PBO\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInject
 D:\PBO\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 D:\PBO\PBO Projek\bin\Debug\net8.0-windows\Npgsql.dll
 D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.AssemblyReference.cache
-D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.Cashier.resources
 D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.Up2Date
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\Guna.UI2.dll
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\System.Management.dll
+D:\PBO\PBO Projek\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Properties.Resources.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.sourcelink.json
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.V_HalamanUtama.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.V_Kasir.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.V_Login.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.V_Produk.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.V_SewaAlat.resources
+D:\PBO\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.View.V_Absen.resources

@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace PBO_Projek.View
 {
-    public partial class Cashier : Form
+    public partial class V_SewaAlat : Form
     {
-        public Cashier()
+        public V_SewaAlat()
         {
             InitializeComponent();
-        }
-        private void Cashier_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

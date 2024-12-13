@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PBO_Projek.View
 {
-    public partial class HalamanUtama : Form
+    public partial class V_HalamanUtama : Form
     {
-        public HalamanUtama()
+        public V_HalamanUtama()
         {
             InitializeComponent();
         }

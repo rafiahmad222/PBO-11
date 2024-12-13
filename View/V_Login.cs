@@ -2,9 +2,9 @@ using PBO_Projek.View;
 
 namespace PBO_Projek
 {
-    public partial class Login : Form
+    public partial class V_Login : Form
     {
-        public Login()
+        public V_Login()
         {
 
             InitializeComponent();

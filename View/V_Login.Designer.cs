@@ -1,6 +1,6 @@
 ﻿namespace PBO_Projek
 {
-    partial class Login
+    partial class V_Login
     {
         /// <summary>
         ///  Required designer variable.
