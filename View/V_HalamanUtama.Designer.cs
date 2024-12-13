@@ -63,6 +63,7 @@
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             guna2Panel2.SuspendLayout();
             guna2Panel1.SuspendLayout();
@@ -327,14 +328,26 @@
             guna2Button5.Text = "Logout";
             guna2Button5.TextOffset = new Point(15, 0);
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(77, 113, 17);
+            label2.Location = new Point(229, 66);
+            label2.Name = "label2";
+            label2.Size = new Size(232, 46);
+            label2.TabIndex = 10;
+            label2.Text = "Hello Admin!";
+            // 
             // V_HalamanUtama
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(label2);
             Controls.Add(guna2Panel2);
             Controls.Add(guna2Panel1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "V_HalamanUtama";
             Text = "HalamanUtama";
             Load += HalamanUtama_Load;
@@ -342,6 +355,7 @@
             guna2Panel2.ResumeLayout(false);
             guna2Panel1.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -357,5 +371,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Label label2;
     }
 }
