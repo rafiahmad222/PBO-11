@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|h:\\pbo\\pbo-11\\view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|H:\\PBO\\PBO-11\\view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7527D565-DC98-4F00-A928-D486FA5E685A}|PBO Projek.csproj|solutionrelative:view\\v_kasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "View\\V_Login.cs",
               "ToolTip": "H:\\PBO\\PBO-11\\View\\V_Login.cs",
               "RelativeToolTip": "View\\V_Login.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T13:44:48.246Z",
               "EditorCaption": ""
@@ -86,8 +86,7 @@
               "ToolTip": "H:\\PBO\\PBO-11\\View\\V_Absen.cs [Design]",
               "RelativeToolTip": "View\\V_Absen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:02:01.867Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-04T16:02:01.867Z"
             },
             {
               "$type": "Document",
@@ -98,8 +97,7 @@
               "ToolTip": "H:\\PBO\\PBO-11\\View\\V_Kasir.cs [Design]",
               "RelativeToolTip": "View\\V_Kasir.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:57:02.327Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-04T15:57:02.327Z"
             },
             {
               "$type": "Document",
