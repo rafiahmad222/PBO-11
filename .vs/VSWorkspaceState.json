@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Controller",
-    "\\Controller\\Core"
+    "\\Controller\\Core",
+    "\\Model",
+    "\\Properties",
+    "\\View"
   ],
-  "SelectedNode": "\\Controller\\Core\\dataConnection.cs",
+  "SelectedNode": "\\View\\V_Kasir.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -59,5 +59,25 @@ namespace PBO_Projek.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fotor_20241128145441 {
+            get {
+                object obj = ResourceManager.GetObject("fotor-20241128145441", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_10_27_at_13_22_01 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp-Image-2022-10-27-at-13.22.01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

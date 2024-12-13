@@ -40,74 +40,87 @@
             // panel1
             // 
             panel1.BackColor = Color.Bisque;
+            panel1.BackgroundImage = Properties.Resources.fotor_20241128145441;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Location = new Point(1, 0);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(406, 557);
+            panel1.Size = new Size(350, 446);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint_1;
             // 
             // Username
             // 
             Username.AutoSize = true;
-            Username.Font = new Font("Creato Display", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Username.Location = new Point(444, 119);
+            Username.BackColor = Color.Transparent;
+            Username.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Username.Location = new Point(438, 95);
+            Username.Margin = new Padding(2, 0, 2, 0);
             Username.Name = "Username";
-            Username.Size = new Size(125, 29);
+            Username.Size = new Size(108, 25);
             Username.TabIndex = 1;
             Username.Text = "Username:";
             // 
             // UsernameBox
             // 
             UsernameBox.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            UsernameBox.Location = new Point(447, 152);
+            UsernameBox.Location = new Point(438, 122);
+            UsernameBox.Margin = new Padding(2, 2, 2, 2);
             UsernameBox.Name = "UsernameBox";
-            UsernameBox.Size = new Size(554, 37);
+            UsernameBox.Size = new Size(329, 32);
             UsernameBox.TabIndex = 2;
+            UsernameBox.TextChanged += UsernameBox_TextChanged;
             // 
             // PasswordBox
             // 
             PasswordBox.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PasswordBox.Location = new Point(447, 268);
+            PasswordBox.Location = new Point(438, 213);
+            PasswordBox.Margin = new Padding(2, 2, 2, 2);
             PasswordBox.Name = "PasswordBox";
-            PasswordBox.Size = new Size(554, 37);
+            PasswordBox.Size = new Size(329, 32);
             PasswordBox.TabIndex = 4;
             // 
             // Password
             // 
             Password.AutoSize = true;
-            Password.Font = new Font("Creato Display", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Password.Location = new Point(445, 234);
+            Password.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Password.Location = new Point(438, 186);
+            Password.Margin = new Padding(2, 0, 2, 0);
             Password.Name = "Password";
-            Password.Size = new Size(121, 29);
+            Password.Size = new Size(104, 25);
             Password.TabIndex = 3;
             Password.Text = "Password:";
             // 
             // ShowPassword
             // 
             ShowPassword.AutoSize = true;
-            ShowPassword.Font = new Font("SF Pro Display", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ShowPassword.Location = new Point(836, 311);
+            ShowPassword.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ShowPassword.Location = new Point(616, 249);
+            ShowPassword.Margin = new Padding(2, 2, 2, 2);
             ShowPassword.Name = "ShowPassword";
-            ShowPassword.Size = new Size(165, 28);
+            ShowPassword.Size = new Size(151, 24);
             ShowPassword.TabIndex = 5;
             ShowPassword.Text = "Show Password";
             ShowPassword.UseVisualStyleBackColor = true;
             // 
             // button_login
             // 
-            button_login.Font = new Font("Helotypo", 10.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_login.Location = new Point(621, 402);
+            button_login.Font = new Font("Microsoft Sans Serif", 10.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_login.Location = new Point(513, 321);
+            button_login.Margin = new Padding(2, 2, 2, 2);
             button_login.Name = "button_login";
-            button_login.Size = new Size(237, 44);
+            button_login.Size = new Size(190, 35);
             button_login.TabIndex = 6;
             button_login.Text = "LOGIN";
             button_login.UseVisualStyleBackColor = true;
             // 
-            // Login
+            // V_Login
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1046, 552);
+            BackgroundImage = Properties.Resources.WhatsApp_Image_2022_10_27_at_13_22_01;
+            ClientSize = new Size(837, 442);
             Controls.Add(button_login);
             Controls.Add(ShowPassword);
             Controls.Add(PasswordBox);
@@ -115,7 +128,8 @@
             Controls.Add(UsernameBox);
             Controls.Add(Username);
             Controls.Add(panel1);
-            Name = "Login";
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "V_Login";
             Text = "Login";
             Load += Login_Load;
             ResumeLayout(false);

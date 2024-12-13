@@ -18,5 +18,15 @@ namespace PBO_Projek
         {
 
         }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UsernameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
