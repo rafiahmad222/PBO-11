@@ -63,6 +63,16 @@ namespace PBO_Projek.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Desain_tanpa_judul_2 {
+            get {
+                object obj = ResourceManager.GetObject("Desain tanpa judul 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fotor_20241128145441 {
             get {
                 object obj = ResourceManager.GetObject("fotor-20241128145441", resourceCulture);
