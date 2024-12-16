@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PBO\\PBO-11\\PBO Projek.csproj": {}
+    "D:\\PROJECT PBO\\PBO-11\\PBO Projek.csproj": {}
   },
   "projects": {
-    "D:\\PBO\\PBO-11\\PBO Projek.csproj": {
+    "D:\\PROJECT PBO\\PBO-11\\PBO Projek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PBO\\PBO-11\\PBO Projek.csproj",
+        "projectUniqueName": "D:\\PROJECT PBO\\PBO-11\\PBO Projek.csproj",
         "projectName": "PBO Projek",
-        "projectPath": "D:\\PBO\\PBO-11\\PBO Projek.csproj",
-        "packagesPath": "C:\\Users\\rafii\\.nuget\\packages\\",
-        "outputPath": "D:\\PBO\\PBO-11\\obj\\",
+        "projectPath": "D:\\PROJECT PBO\\PBO-11\\PBO Projek.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECT PBO\\PBO-11\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WPF\\bin\\v8\\",
-          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rafii\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
