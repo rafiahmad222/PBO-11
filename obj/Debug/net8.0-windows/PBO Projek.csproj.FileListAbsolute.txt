@@ -45,7 +45,6 @@ D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.Properties.Resources.resources
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_Absen.resources
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_HalamanUtama.resources
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_Kasir.resources
-D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.V_Login.resources
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_Produk.resources
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_SewaAlat.resources
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
@@ -60,3 +59,4 @@ D:\PBO\PBO-11\obj\Debug\net8.0-windows\refint\PBO Projek.dll
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO Projek.pdb
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO Projek.genruntimeconfig.cache
 D:\PBO\PBO-11\obj\Debug\net8.0-windows\ref\PBO Projek.dll
+D:\PBO\PBO-11\obj\Debug\net8.0-windows\PBO_Projek.View.V_Login.resources
