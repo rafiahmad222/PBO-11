@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Npgsql;
 
 
-namespace PBO_Projek.Controller.Core
+namespace PBO_Projek.Core
 {
     public class dataConnection
     {
         private static readonly string DB_HOST = "localhost";
-        private static readonly string DB_DATABASE = "DBSEHATIasN_REV";
+        private static readonly string DB_DATABASE = "PROJEK_KopMart";
         private static readonly string DB_USERNAME = "postgres";
         private static readonly string DB_PASSWORD = "2";
         private static readonly string DB_PORT = "5432";
@@ -22,12 +22,11 @@ namespace PBO_Projek.Controller.Core
 
         public static void openConnection()
         {
-            connection = new NpgsqlConnection($"Host={DB_HOST};Username={DB_USERNAME};Password={DB_PASSWORD};Database={DB_DATABASE};Port={DB_PORT}");
+            connection = new NpgsqlConnection($"Server={DB_HOST};Port={DB_PORT};User Id={DB_USERNAME};Password={DB_PASSWORD};Database={DB_DATABASE};");
             connection.Open();
             command = new NpgsqlCommand();
             command.Connection = connection;
         }
-
         public static void closeConnection()
         {
             connection.Close();
@@ -55,7 +54,6 @@ namespace PBO_Projek.Controller.Core
                 throw new Exception(e.Message);
             }
         }
-
         public static void commandExecutor(string query, NpgsqlParameter[] parameters = null)
         {
             try
