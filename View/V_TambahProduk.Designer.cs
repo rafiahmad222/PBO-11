@@ -185,16 +185,6 @@
             txtNamaProduk.Size = new Size(163, 27);
             txtNamaProduk.TabIndex = 7;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(212, 156);
-            label6.Name = "label6";
-            label6.Size = new Size(91, 20);
-            label6.TabIndex = 8;
-            label6.Text = "Stok Produk:";
-            label6.Click += this.label6_Click;
-            // 
             // txtJumlahStok
             // 
             txtJumlahStok.Location = new Point(212, 179);

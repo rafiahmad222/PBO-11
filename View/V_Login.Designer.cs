@@ -93,6 +93,7 @@
             btnRegistrasi.Size = new Size(215, 68);
             btnRegistrasi.TabIndex = 15;
             btnRegistrasi.Text = "Registrasi";
+            btnRegistrasi.Click += btnRegistrasi_Click;
             // 
             // btnLogin
             // 
