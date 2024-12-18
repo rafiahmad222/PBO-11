@@ -38,7 +38,7 @@ namespace PBO_Projek.View
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            V_HalamanUtama halamanUtama = new V_HalamanUtama();
+            V_MainForm halamanUtama = new V_MainForm();
             halamanUtama.Show();
             this.Hide();
         }

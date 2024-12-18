@@ -4,19 +4,28 @@
     <Compile Update="View\V_Absen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\V_Beranda.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\V_Kasir.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\V_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\V_MengubahProduk.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="View\V_Produk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\V_HalamanUtama.cs">
+    <Compile Update="View\V_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\V_Registrasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\V_SampleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\V_SampleView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\V_SewaAlat.cs">

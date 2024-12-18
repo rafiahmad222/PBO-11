@@ -10,51 +10,61 @@ using System.Windows.Forms;
 
 namespace PBO_Projek.View
 {
-    public partial class V_TambahProduk : Form
+    public partial class V_TambahProduk : V_SampleAdd
     {
+        string filePath;
         public V_TambahProduk()
         {
             InitializeComponent();
         }
 
-        private void V_TambahProduk_Load(object sender, EventArgs e)
+        private void btnbrowse_Click(object sender, EventArgs e)
         {
-
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                filePath = opf.FileName;
+                picturebox1.Image = new Bitmap(filePath);
+            }
         }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void btnTambah_Click(object sender, EventArgs e)
         {
+            if (txtnamaproduk.Text == "" || txtHarga.Text == "" || txtStok.Text == "" || cbkategori.Text == "")
+            {
+                MessageBox.Show("Harap isi semua data");
+            }
+            else
+            {
+                // C_Product.InsertProduct(tbNamaProduk.Text, tbHargaProduk.Text, tbStokProduk.Text, tbDeskripsi.Text, filePath);
+                MessageBox.Show("Produk berhasil ditambahkan");
+                txtnamaproduk.Text = "";
+                txtHarga.Text = "";
+                txtStok.Text = "";
 
+                picturebox1.Image = null;
+            }
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        public override void btnBatal_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        public override void btnSimpan_Click(object sender, EventArgs e)
         {
+            if (txtnamaproduk.Text == "" || txtHarga.Text == "" || txtStok.Text == "" || cbkategori.Text == "")
+            {
+                MessageBox.Show("Harap isi semua data");
+            }
+            else
+            {
+                C_Product.InsertProduct(txtnamaproduk.Text, txtHarga.Text, txtStok.Text, cbkategori.Text, filePath);
+                MessageBox.Show("Produk berhasil ditambahkan");
+                txtnamaproduk.Text = "";
+                txtHarga.Text = "";
+                txtStok.Text = "";
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtHarga_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
+                picturebox1.Image = null;
+            }
         }
     }
 }

@@ -34,7 +34,7 @@ namespace PBO_Projek.View
         {
             if (C_Login.login(txtUsername.Text, txtPass.Text))
             {
-                V_HalamanUtama halamanUtama = new V_HalamanUtama();
+                V_MainForm halamanUtama = new V_MainForm();
                 halamanUtama.Show();
                 this.Hide();
             }
@@ -44,7 +44,6 @@ namespace PBO_Projek.View
         {
             V_Registrasi registrasi = new V_Registrasi();
             registrasi.Show();
-            this.Hide();
         }
     }
 }

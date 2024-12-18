@@ -28,279 +28,282 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(V_TambahProduk));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panel1 = new Panel();
-            guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            label1 = new Label();
-            guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            pictureBox1 = new PictureBox();
-            label3 = new Label();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            txtnamaproduk = new Guna.UI2.WinForms.Guna2TextBox();
             label2 = new Label();
-            Deskripsi = new TextBox();
+            label3 = new Label();
+            txtStok = new Guna.UI2.WinForms.Guna2TextBox();
             label4 = new Label();
-            txtHarga = new TextBox();
             label5 = new Label();
-            txtNamaProduk = new TextBox();
-            label6 = new Label();
-            txtJumlahStok = new TextBox();
-            label7 = new Label();
-            txtKategori = new TextBox();
-            dtpTanggalKedaluwarsa = new DateTimePicker();
-            label8 = new Label();
-            Tambah = new Button();
-            panel2 = new Panel();
-            panel1.SuspendLayout();
+            txtHarga = new Guna.UI2.WinForms.Guna2TextBox();
+            cbkategori = new Guna.UI2.WinForms.Guna2ComboBox();
+            picturebox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            btnbrowse = new Guna.UI2.WinForms.Guna2Button();
+            guna2Panel1.SuspendLayout();
+            guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picturebox1).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // guna2Panel1
             // 
-            panel1.BackColor = Color.FromArgb(77, 113, 17);
-            panel1.Controls.Add(guna2ControlBox1);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(guna2PictureBox1);
-            panel1.Location = new Point(-1, -2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(493, 76);
-            panel1.TabIndex = 0;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            guna2Panel1.Size = new Size(868, 148);
             // 
-            // guna2PictureBox1
+            // guna2Panel2
             // 
-            guna2PictureBox1.BackColor = Color.Transparent;
-            guna2PictureBox1.BackgroundImage = (Image)resources.GetObject("guna2PictureBox1.BackgroundImage");
-            guna2PictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            guna2PictureBox1.CustomizableEdges = customizableEdges7;
-            guna2PictureBox1.FillColor = Color.Transparent;
-            guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(-20, -50);
-            guna2PictureBox1.Margin = new Padding(2);
-            guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2PictureBox1.Size = new Size(196, 175);
-            guna2PictureBox1.TabIndex = 1;
-            guna2PictureBox1.TabStop = false;
-            guna2PictureBox1.UseTransparentBackground = true;
-            guna2PictureBox1.Click += guna2PictureBox1_Click;
+            guna2Panel2.Location = new Point(0, 494);
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Panel2.Size = new Size(868, 72);
             // 
             // label1
             // 
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(127, 26);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(173, 30);
-            label1.TabIndex = 2;
+            label1.Size = new Size(174, 36);
             label1.Text = "Tambah Produk";
-            label1.Click += label1_Click;
             // 
-            // guna2ControlBox1
+            // guna2PictureBox1
             // 
-            guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2ControlBox1.BackColor = Color.Chartreuse;
-            guna2ControlBox1.CustomizableEdges = customizableEdges5;
-            guna2ControlBox1.FillColor = Color.FromArgb(139, 152, 166);
-            guna2ControlBox1.IconColor = Color.White;
-            guna2ControlBox1.Location = new Point(424, 20);
-            guna2ControlBox1.Name = "guna2ControlBox1";
-            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2ControlBox1.Size = new Size(56, 36);
-            guna2ControlBox1.TabIndex = 3;
+            guna2PictureBox1.Image = Properties.Resources.dashicons_products;
+            guna2PictureBox1.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
+            guna2PictureBox1.Location = new Point(27, 12);
+            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            guna2PictureBox1.Size = new Size(101, 107);
+            guna2PictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             // 
-            // pictureBox1
+            // btnBatal
             // 
-            pictureBox1.BackColor = Color.FromArgb(224, 224, 224);
-            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Location = new Point(180, 40);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(118, 103);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            btnBatal.DialogResult = DialogResult.None;
+            btnBatal.DisabledState.BorderColor = Color.DarkGray;
+            btnBatal.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBatal.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBatal.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBatal.ShadowDecoration.CustomizableEdges = customizableEdges4;
             // 
-            // label3
+            // btnSimpan
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(19, 222);
-            label3.Name = "label3";
-            label3.Size = new Size(72, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Deskripsi:";
+            btnSimpan.DialogResult = DialogResult.None;
+            btnSimpan.DisabledState.BorderColor = Color.DarkGray;
+            btnSimpan.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSimpan.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSimpan.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSimpan.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            // 
+            // txtnamaproduk
+            // 
+            txtnamaproduk.CustomizableEdges = customizableEdges6;
+            txtnamaproduk.DefaultText = "";
+            txtnamaproduk.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtnamaproduk.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtnamaproduk.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtnamaproduk.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtnamaproduk.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtnamaproduk.Font = new Font("Segoe UI", 9F);
+            txtnamaproduk.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtnamaproduk.Location = new Point(27, 204);
+            txtnamaproduk.Margin = new Padding(4, 5, 4, 5);
+            txtnamaproduk.Name = "txtnamaproduk";
+            txtnamaproduk.PasswordChar = '\0';
+            txtnamaproduk.PlaceholderText = "";
+            txtnamaproduk.SelectedText = "";
+            txtnamaproduk.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            txtnamaproduk.Size = new Size(329, 42);
+            txtnamaproduk.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(180, 17);
+            label2.Location = new Point(27, 174);
             label2.Name = "label2";
-            label2.Size = new Size(92, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Foto Produk:";
-            label2.Click += label2_Click;
+            label2.Size = new Size(121, 25);
+            label2.TabIndex = 2;
+            label2.Text = "Nama Produk";
             // 
-            // Deskripsi
+            // label3
             // 
-            Deskripsi.Location = new Point(19, 245);
-            Deskripsi.Name = "Deskripsi";
-            Deskripsi.RightToLeft = RightToLeft.Yes;
-            Deskripsi.Size = new Size(163, 27);
-            Deskripsi.TabIndex = 3;
+            label3.AutoSize = true;
+            label3.Location = new Point(27, 260);
+            label3.Name = "label3";
+            label3.Size = new Size(47, 25);
+            label3.TabIndex = 4;
+            label3.Text = "Stok";
+            // 
+            // txtStok
+            // 
+            txtStok.CustomizableEdges = customizableEdges8;
+            txtStok.DefaultText = "";
+            txtStok.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtStok.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtStok.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtStok.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtStok.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtStok.Font = new Font("Segoe UI", 9F);
+            txtStok.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtStok.Location = new Point(27, 290);
+            txtStok.Margin = new Padding(4, 5, 4, 5);
+            txtStok.Name = "txtStok";
+            txtStok.PasswordChar = '\0';
+            txtStok.PlaceholderText = "";
+            txtStok.SelectedText = "";
+            txtStok.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            txtStok.Size = new Size(329, 42);
+            txtStok.TabIndex = 3;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(19, 288);
+            label4.Location = new Point(27, 363);
             label4.Name = "label4";
-            label4.Size = new Size(122, 20);
-            label4.TabIndex = 4;
-            label4.Text = "Masukkan Harga:";
-            // 
-            // txtHarga
-            // 
-            txtHarga.Location = new Point(19, 311);
-            txtHarga.Name = "txtHarga";
-            txtHarga.Size = new Size(163, 27);
-            txtHarga.TabIndex = 5;
-            txtHarga.TextChanged += txtHarga_TextChanged;
+            label4.Size = new Size(78, 25);
+            label4.TabIndex = 6;
+            label4.Text = "Kategori";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(19, 156);
+            label5.Location = new Point(386, 174);
             label5.Name = "label5";
-            label5.Size = new Size(102, 20);
-            label5.TabIndex = 6;
-            label5.Text = "Nama Produk:";
+            label5.Size = new Size(60, 25);
+            label5.TabIndex = 8;
+            label5.Text = "Harga";
             // 
-            // txtNamaProduk
+            // txtHarga
             // 
-            txtNamaProduk.Location = new Point(19, 179);
-            txtNamaProduk.Name = "txtNamaProduk";
-            txtNamaProduk.RightToLeft = RightToLeft.Yes;
-            txtNamaProduk.Size = new Size(163, 27);
-            txtNamaProduk.TabIndex = 7;
+            txtHarga.CustomizableEdges = customizableEdges10;
+            txtHarga.DefaultText = "";
+            txtHarga.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtHarga.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtHarga.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtHarga.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtHarga.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtHarga.Font = new Font("Segoe UI", 9F);
+            txtHarga.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtHarga.Location = new Point(386, 204);
+            txtHarga.Margin = new Padding(4, 5, 4, 5);
+            txtHarga.Name = "txtHarga";
+            txtHarga.PasswordChar = '\0';
+            txtHarga.PlaceholderText = "";
+            txtHarga.SelectedText = "";
+            txtHarga.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            txtHarga.Size = new Size(329, 42);
+            txtHarga.TabIndex = 7;
             // 
-            // txtJumlahStok
+            // cbkategori
             // 
-            txtJumlahStok.Location = new Point(212, 179);
-            txtJumlahStok.Name = "txtJumlahStok";
-            txtJumlahStok.RightToLeft = RightToLeft.Yes;
-            txtJumlahStok.Size = new Size(250, 27);
-            txtJumlahStok.TabIndex = 9;
-            txtJumlahStok.TextChanged += textBox2_TextChanged;
+            cbkategori.BackColor = Color.Transparent;
+            cbkategori.CustomizableEdges = customizableEdges12;
+            cbkategori.DisplayMember = "Traktor";
+            cbkategori.DrawMode = DrawMode.OwnerDrawFixed;
+            cbkategori.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbkategori.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbkategori.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbkategori.Font = new Font("Segoe UI", 10F);
+            cbkategori.ForeColor = Color.FromArgb(68, 88, 112);
+            cbkategori.ItemHeight = 30;
+            cbkategori.Items.AddRange(new object[] { "Sayur", "Buah", "Traktor", "Pemotong", "Tangki " });
+            cbkategori.Location = new Point(27, 391);
+            cbkategori.Name = "cbkategori";
+            cbkategori.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            cbkategori.Size = new Size(329, 36);
+            cbkategori.TabIndex = 9;
             // 
-            // label7
+            // picturebox1
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(212, 222);
-            label7.Name = "label7";
-            label7.Size = new Size(69, 20);
-            label7.TabIndex = 11;
-            label7.Text = "Kategori:";
+            picturebox1.Image = Properties.Resources.ic_sharp_category__1_;
+            picturebox1.ImageRotate = 0F;
+            picturebox1.Location = new Point(422, 264);
+            picturebox1.Name = "picturebox1";
+            picturebox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            picturebox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            picturebox1.Size = new Size(163, 163);
+            picturebox1.SizeMode = PictureBoxSizeMode.Zoom;
+            picturebox1.TabIndex = 10;
+            picturebox1.TabStop = false;
             // 
-            // txtKategori
+            // btnbrowse
             // 
-            txtKategori.Location = new Point(212, 245);
-            txtKategori.Name = "txtKategori";
-            txtKategori.RightToLeft = RightToLeft.Yes;
-            txtKategori.Size = new Size(250, 27);
-            txtKategori.TabIndex = 12;
-            // 
-            // dtpTanggalKedaluwarsa
-            // 
-            dtpTanggalKedaluwarsa.Location = new Point(212, 311);
-            dtpTanggalKedaluwarsa.Name = "dtpTanggalKedaluwarsa";
-            dtpTanggalKedaluwarsa.Size = new Size(250, 27);
-            dtpTanggalKedaluwarsa.TabIndex = 13;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(212, 288);
-            label8.Name = "label8";
-            label8.Size = new Size(98, 20);
-            label8.TabIndex = 14;
-            label8.Text = "Expired Date:";
-            label8.Click += label8_Click;
-            // 
-            // Tambah
-            // 
-            Tambah.BackColor = Color.FromArgb(195, 233, 86);
-            Tambah.Location = new Point(148, 377);
-            Tambah.Name = "Tambah";
-            Tambah.Size = new Size(171, 46);
-            Tambah.TabIndex = 15;
-            Tambah.Text = "Tambah";
-            Tambah.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(Tambah);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(dtpTanggalKedaluwarsa);
-            panel2.Controls.Add(txtKategori);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(txtJumlahStok);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(txtNamaProduk);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(txtHarga);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(Deskripsi);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(0, 74);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(492, 467);
-            panel2.TabIndex = 16;
+            btnbrowse.AutoRoundedCorners = true;
+            btnbrowse.BackColor = Color.Transparent;
+            btnbrowse.BorderRadius = 26;
+            btnbrowse.CustomizableEdges = customizableEdges15;
+            btnbrowse.DisabledState.BorderColor = Color.DarkGray;
+            btnbrowse.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnbrowse.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnbrowse.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnbrowse.FillColor = Color.Gray;
+            btnbrowse.Font = new Font("Segoe UI", 9F);
+            btnbrowse.ForeColor = Color.White;
+            btnbrowse.Location = new Point(613, 324);
+            btnbrowse.Name = "btnbrowse";
+            btnbrowse.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnbrowse.Size = new Size(186, 54);
+            btnbrowse.TabIndex = 11;
+            btnbrowse.Text = "Pilih Dari File";
+            btnbrowse.Click += btnbrowse_Click;
             // 
             // V_TambahProduk
             // 
-            AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.White;
-            ClientSize = new Size(491, 536);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(868, 566);
+            Controls.Add(btnbrowse);
+            Controls.Add(picturebox1);
+            Controls.Add(cbkategori);
+            Controls.Add(label5);
+            Controls.Add(txtHarga);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(txtStok);
+            Controls.Add(label2);
+            Controls.Add(txtnamaproduk);
             Name = "V_TambahProduk";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "V_TambahProduk";
-            Load += V_TambahProduk_Load;
-            panel1.ResumeLayout(false);
+            Controls.SetChildIndex(guna2Panel1, 0);
+            Controls.SetChildIndex(guna2Panel2, 0);
+            Controls.SetChildIndex(txtnamaproduk, 0);
+            Controls.SetChildIndex(label2, 0);
+            Controls.SetChildIndex(txtStok, 0);
+            Controls.SetChildIndex(label3, 0);
+            Controls.SetChildIndex(label4, 0);
+            Controls.SetChildIndex(txtHarga, 0);
+            Controls.SetChildIndex(label5, 0);
+            Controls.SetChildIndex(cbkategori, 0);
+            Controls.SetChildIndex(picturebox1, 0);
+            Controls.SetChildIndex(btnbrowse, 0);
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
+            guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picturebox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Panel panel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Label label1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private PictureBox pictureBox1;
-        private Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox txtnamaproduk;
         private Label label2;
-        private TextBox Deskripsi;
+        private Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox txtStok;
         private Label label4;
-        private TextBox txtHarga;
         private Label label5;
-        private TextBox txtNamaProduk;
-        private Label label6;
-        private TextBox txtJumlahStok;
-        private Label label7;
-        private TextBox txtKategori;
-        private DateTimePicker dtpTanggalKedaluwarsa;
-        private Label label8;
-        private Button Tambah;
-        private Panel panel2;
+        private Guna.UI2.WinForms.Guna2TextBox txtHarga;
+        private Guna.UI2.WinForms.Guna2ComboBox cbkategori;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox picturebox1;
+        private Guna.UI2.WinForms.Guna2Button btnbrowse;
     }
 }

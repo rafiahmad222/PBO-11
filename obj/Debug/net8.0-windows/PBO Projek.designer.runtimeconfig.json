@@ -1,0 +1,25 @@
+{
+  "runtimeOptions": {
+    "tfm": "net8.0",
+    "frameworks": [
+      {
+        "name": "Microsoft.NETCore.App",
+        "version": "8.0.0"
+      },
+      {
+        "name": "Microsoft.WindowsDesktop.App",
+        "version": "8.0.0"
+      }
+    ],
+    "additionalProbingPaths": [
+      "C:\\Users\\rafii\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\rafii\\.nuget\\packages",
+      "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WPF\\bin\\v8",
+      "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8"
+    ],
+    "configProperties": {
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}
