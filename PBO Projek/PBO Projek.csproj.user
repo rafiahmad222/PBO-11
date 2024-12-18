@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Views\FormDataKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FormDetailTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FormSukuCadang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FormTambahKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\HomepageKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\HomepageOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Homepage\V_ManagementKasir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\Homepage\V_RiwayatTransaksi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\Homepage\V_Produk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\Homepage\V_AlatPertanian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Login\V_awal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\Login\V_LoginPemilik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\TambahAlat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Transaksi\V_Transaksi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

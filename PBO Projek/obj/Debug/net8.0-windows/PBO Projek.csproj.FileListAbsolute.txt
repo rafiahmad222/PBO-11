@@ -1,0 +1,152 @@
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.exe
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.deps.json
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.runtimeconfig.json
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Properties.Resources.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_awal.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginOwner.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginPemilik.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.MainFrame.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfoInputs.cache
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfo.cs
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.CoreCompileInputs.cache
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\refint\PBO Projek.dll
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.genruntimeconfig.cache
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\ref\PBO Projek.dll
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.HomepageOwner.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.sourcelink.json
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_SukuCadang.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_RiwayatTransaksi.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Teknisi.V_LayananServis.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_HomePageTeknisi.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahLayanan.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormSukuCadang.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormDataKasir.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.AssemblyReference.cache
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.Up2Date
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_TambahLayanan.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahTeknisi.resources
+C:\Users\bimak\source\repos\PBO Projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_ManagementTeknisiDanKasir.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.exe
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.deps.json
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.runtimeconfig.json
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Properties.Resources.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormDataKasir.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormSukuCadang.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormTambahKategori.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.HomepageOwner.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_ManagementTeknisiDanKasir.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_RiwayatTransaksi.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_SukuCadang.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_TambahLayanan.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_awal.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginOwner.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginPemilik.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.MainFrame.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahLayanan.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahTeknisi.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Teknisi.V_LayananServis.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_HomePageTeknisi.resources
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfoInputs.cache
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfo.cs
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.sourcelink.json
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.Up2Date
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\refint\PBO Projek.dll
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.genruntimeconfig.cache
+C:\Users\asus\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\ref\PBO Projek.dll
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.exe
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.deps.json
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.runtimeconfig.json
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.AssemblyReference.cache
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Properties.Resources.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormDataKasir.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormSukuCadang.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormTambahKategori.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.HomepageOwner.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_ManagementTeknisiDanKasir.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_RiwayatTransaksi.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_SukuCadang.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_TambahLayanan.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_awal.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginOwner.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginPemilik.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.MainFrame.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahLayanan.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahTeknisi.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Teknisi.V_LayananServis.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfoInputs.cache
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfo.cs
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.CoreCompileInputs.cache
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.sourcelink.json
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.Up2Date
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\refint\PBO Projek.dll
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.genruntimeconfig.cache
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\ref\PBO Projek.dll
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.HomepageKasir.resources
+C:\Users\bimak\source\repos\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormDetailTransaksi.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.exe
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.deps.json
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.runtimeconfig.json
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.AssemblyReference.cache
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Properties.Resources.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormDataKasir.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormDetailTransaksi.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormSukuCadang.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormTambahKategori.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.HomepageKasir.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.HomepageOwner.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_RiwayatTransaksi.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_awal.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginOwner.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginPemilik.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.MainFrame.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfoInputs.cache
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfo.cs
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.CoreCompileInputs.cache
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.sourcelink.json
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.Up2Date
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.dll
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\refint\PBO Projek.dll
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.pdb
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.genruntimeconfig.cache
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\ref\PBO Projek.dll
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_ManagementKasir.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_Produk.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_AlatPertanian.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahAlat.resources
+C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Teknisi.V_Transaksi.resources
