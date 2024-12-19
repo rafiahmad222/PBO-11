@@ -11,18 +11,19 @@ namespace PBO_Projek.Model
     public class M_DetailTransaksi
     {
         [Key]
-        public int Id_Detail_Servis { get; set; }
-        [ForeignKey("M_Servis")]
-        public int Id_Servis { get; set; }
-        [ForeignKey("M_Layanan")]
-        public int Id_Layanan { get; set; }
-        [ForeignKey("M_Teknisi")]
-        public int Id_Teknisi { get; set; }
-        [ForeignKey("M_SukuCadang")]
-        public int Id_Suku_Cadang { get; set; }
+        public int Id_Detail_Transaksi { get; set; }
+        [ForeignKey("M_Transaksi")]
+        public int Id_Transaksi { get; set; }
+        [ForeignKey("M_Alat")]
+        public int Id_Alat { get; set; }
+        [ForeignKey("M_Kasir")]
+        public int Id_Kasir { get; set; }
+        [ForeignKey("M_Produk")]
+        public int Id_Produk { get; set; }
         [Required]
         public int Jumlah { get; set; }
         [Required]
-        public decimal Harga { get; set; }
+        public decimal Total_Harga { get; set; }
+       
     }
 }

@@ -12,7 +12,7 @@ namespace PBO_Projek.Core
 {
     public abstract class Connector
     {
-        protected string addres = $"Host=localhost;Database=MekanikHunter;Username=postgres;Password=123";
+        protected string addres = $"Host=localhost;Database=PROJEK_KopMart;Username=postgres;Password=2";
         private NpgsqlConnection Conn;
         protected NpgsqlConnection conn
         {
@@ -35,83 +35,71 @@ namespace PBO_Projek.Core
         public void setup()
         {
             Execute_No_Return(@"
-    CREATE TABLE IF NOT EXISTS Data_Kasir (
-        Id_Kasir SERIAL PRIMARY KEY,
-        Username VARCHAR(50) NOT NULL,
-        Password VARCHAR(50) NOT NULL,
-        Nama_Kasir VARCHAR(100) NOT NULL
-    );
-    ");
+            CREATE TABLE IF NOT EXISTS Data_Kasir (
+                Id_Kasir SERIAL PRIMARY KEY,
+                Username VARCHAR(50) NOT NULL,
+                Password VARCHAR(50) NOT NULL,
+                Nama_Kasir VARCHAR(100) NOT NULL);
+                ");
+            Execute_No_Return(@"
+            CREATE TABLE IF NOT EXISTS Data_AlatPertanian (
+                Id_Alat SERIAL PRIMARY KEY,
+                Nama_Alat VARCHAR(100) NOT NULL,
+                Harga_Alat DECIMAL(10, 2) NOT NULL
+            );
+                ");
 
             Execute_No_Return(@"
-    CREATE TABLE IF NOT EXISTS Data_Teknisi(
-        Id_Teknisi SERIAL PRIMARY KEY,
-        Nama_Teknisi VARCHAR(100) NOT NULL
-    );
-    ");
+            CREATE TABLE IF NOT EXISTS Kategori_Produk (
+                Id_Kategori SERIAL PRIMARY KEY,
+                Nama_Kategori VARCHAR(100) NOT NULL
+            );
+                ");
 
             Execute_No_Return(@"
-    CREATE TABLE IF NOT EXISTS Data_Layanan (
-         Id_Layanan SERIAL PRIMARY KEY,
-         Nama_Layanan VARCHAR(100) NOT NULL,
-         Harga_Layanan DECIMAL(10, 2) NOT NULL
-    );
-    ");
+            CREATE TABLE IF NOT EXISTS Data_Produk (
+                Id_Produk SERIAL PRIMARY KEY,
+                Nama_Produk VARCHAR(100) NOT NULL,
+                Id_Kategori INT NOT NULL,
+                Stok INT NOT NULL,
+                Harga DECIMAL(10, 2) NOT NULL,
+                CONSTRAINT FK_KategoriProduk FOREIGN KEY (Id_Kategori)
+                    REFERENCES KategoriProduk(Id_Kategori) ON DELETE CASCADE
+            );
+                ");
 
             Execute_No_Return(@"
-    CREATE TABLE IF NOT EXISTS Kategori_Suku_Cadang (
-        Id_Kategori SERIAL PRIMARY KEY,
-        Nama_Kategori VARCHAR(100) NOT NULL
-    );
-    ");
+            CREATE TABLE IF NOT EXISTS Data_Transaksi (
+                Id_Transaksi SERIAL PRIMARY KEY,
+                Nama_Pembeli VARCHAR(100) NOT NULL,
+                Kode_Penjualan VARCHAR(20) NOT NULL,
+                Id_Kasir INT NOT NULL,
+                Total_Harga DECIMAL(18, 2) NOT NULL,
+                Tanggal_Transaksi TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                CONSTRAINT FK_Kasir FOREIGN KEY (Id_Kasir)
+                    REFERENCES Data_Kasir(Id_Kasir) ON DELETE CASCADE
+            );
+                ");
 
             Execute_No_Return(@"
-    CREATE TABLE IF NOT EXISTS Data_Suku_Cadang (
-         Id_Suku_Cadang SERIAL PRIMARY KEY,
-         Nama_Suku_Cadang VARCHAR(100) NOT NULL,
-         Id_Kategori INT NOT NULL,
-         Stok INT NOT NULL,
-         Harga DECIMAL(10, 2) NOT NULL,
-         FOREIGN KEY (Id_Kategori) REFERENCES Kategori_Suku_Cadang(Id_Kategori)
-    );
-    ");
-
-            Execute_No_Return(@"
-CREATE TABLE IF NOT EXISTS Data_Servis (
-    Id_Servis SERIAL PRIMARY KEY,
-    Nama_Pemilik VARCHAR(100) NOT NULL,
-    No_Kendaraan VARCHAR(20) NOT NULL,
-    Id_Kasir INT NOT NULL,
-    Total_Harga DECIMAL(18, 2) NOT NULL,
-    Tanggal_Servis TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT FK_Kasir FOREIGN KEY (Id_Kasir)
-        REFERENCES Data_Kasir(Id_Kasir) ON DELETE CASCADE
-);
-
-
-
-    ");
-
-            Execute_No_Return(@"
-CREATE TABLE IF NOT EXISTS Detail_Servis (
-    Id_Detail_Servis SERIAL PRIMARY KEY,
-    Id_Servis INT NOT NULL,
-    Id_Teknisi INT,
-    Id_Layanan INT,
-    Id_Suku_Cadang INT,
-    Jumlah INT NOT NULL,
-    Harga DECIMAL(18, 2) NOT NULL,
-    CONSTRAINT FK_Data_Servis FOREIGN KEY (Id_Servis)
-        REFERENCES Data_Servis(Id_Servis) ON DELETE CASCADE,
-    CONSTRAINT FK_Data_Teknisi FOREIGN KEY (Id_Teknisi)
-        REFERENCES Data_Teknisi(Id_Teknisi) ON DELETE SET NULL,
-    CONSTRAINT FK_Data_Layanan FOREIGN KEY (Id_Layanan)
-        REFERENCES Data_Layanan(Id_Layanan) ON DELETE SET NULL,
-    CONSTRAINT FK_Data_Suku_Cadang FOREIGN KEY (Id_Suku_Cadang)
-        REFERENCES Data_Suku_Cadang(Id_Suku_Cadang) ON DELETE SET NULL
-);
-
-    ");
+            CREATE TABLE IF NOT EXISTS Detail_Transaksi (
+                Id_Detail_Transaksi SERIAL PRIMARY KEY,
+                Id_Transaksi INT NOT NULL,
+                Id_Kasir INT,
+                Id_Alat INT,
+                Id_Produk INT,
+                Jumlah INT NOT NULL,
+                Harga DECIMAL(18, 2) NOT NULL,
+                CONSTRAINT FK_DataTransaksi FOREIGN KEY (Id_Transaksi)
+                    REFERENCES DataTransaksi(Id_Transaksi) ON DELETE CASCADE,
+                CONSTRAINT FK_DataKasir FOREIGN KEY (Id_Kasir)
+                    REFERENCES Data_Kasir(Id_Kasir) ON DELETE SET NULL,
+                CONSTRAINT FK_Data_AlatPertanian FOREIGN KEY (Id_Alat)
+                    REFERENCES Data_AlatPertanian(Id_Alat) ON DELETE SET NULL,
+                CONSTRAINT FK_Dataroduk FOREIGN KEY (Id_Produk)
+                    REFERENCES Dataroduk(Id_Produk) ON DELETE SET NULL
+            );
+                ");
         }
 
         public void Execute_No_Return(string query)

@@ -150,3 +150,41 @@ C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\n
 C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_AlatPertanian.resources
 C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahAlat.resources
 C:\Users\bimak\source\repos\PBO MEKANIK HUNTER\pbo-projek\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Teknisi.V_Transaksi.resources
+D:\PBO-11\PBO-11\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.exe
+D:\PBO-11\PBO-11\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.deps.json
+D:\PBO-11\PBO-11\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.runtimeconfig.json
+D:\PBO-11\PBO-11\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.dll
+D:\PBO-11\PBO-11\PBO Projek\bin\Debug\net8.0-windows\PBO Projek.pdb
+D:\PBO-11\PBO-11\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PBO-11\PBO-11\PBO Projek\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PBO-11\PBO-11\PBO Projek\bin\Debug\net8.0-windows\Npgsql.dll
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.AssemblyReference.cache
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Properties.Resources.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormDataKasir.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormDetailTransaksi.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormTambahKategori.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.HomepageKasir.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.HomepageOwner.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_AlatPertanian.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_ManagementKasir.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_Produk.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Homepage.V_RiwayatTransaksi.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_awal.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginOwner.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.V_LoginPemilik.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.MainFrame.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.TambahAlat.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.Teknisi.V_Transaksi.resources
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.GenerateResource.cache
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.GeneratedMSBuildEditorConfig.editorconfig
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfoInputs.cache
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.AssemblyInfo.cs
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.CoreCompileInputs.cache
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.sourcelink.json
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.csproj.Up2Date
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.dll
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\refint\PBO Projek.dll
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.pdb
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO Projek.genruntimeconfig.cache
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\ref\PBO Projek.dll
+D:\PBO-11\PBO-11\PBO Projek\obj\Debug\net8.0-windows\PBO_Projek.Views.FormTambahProduk.resources

@@ -50,7 +50,7 @@ namespace PBO_Projek.Views.Homepage
                 {
                     dgvLay.Rows.Add(
                         row["No"],
-                        row["Id_Servis"],
+                        row["Id_Transaksi"],
                         row["Nama_Pemilik"],
                         row["No_Kendaraan"],
                         row["Nama_Kasir"],

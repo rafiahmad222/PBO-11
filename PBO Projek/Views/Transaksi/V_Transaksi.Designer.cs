@@ -37,9 +37,13 @@
             label1 = new Label();
             label2 = new Label();
             panel3 = new Panel();
-            dataGridViewLayanan = new DataGridView();
+            dataGridViewAlat = new DataGridView();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
             panel1 = new Panel();
-            dataGridViewSukuCadang = new DataGridView();
+            dataGridViewProduk = new DataGridView();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
             dataGridViewPesanan = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
@@ -63,14 +67,10 @@
             button3 = new Button();
             label8 = new Label();
             textBox4 = new TextBox();
-            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewLayanan).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewAlat).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewSukuCadang).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProduk).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewPesanan).BeginInit();
             panel4.SuspendLayout();
@@ -78,52 +78,55 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(170, 85);
+            textBox1.Location = new Point(149, 64);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(205, 27);
+            textBox1.Size = new Size(180, 23);
             textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(170, 37);
+            textBox2.Location = new Point(149, 28);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(205, 27);
+            textBox2.Size = new Size(180, 23);
             textBox2.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(40, 40);
+            label1.Location = new Point(35, 30);
             label1.Name = "label1";
-            label1.Size = new Size(107, 20);
+            label1.Size = new Size(91, 15);
             label1.TabIndex = 2;
-            label1.Text = "Nama Pemilik :";
+            label1.Text = "Nama Pembeli :";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(40, 88);
+            label2.Location = new Point(35, 66);
             label2.Name = "label2";
-            label2.Size = new Size(118, 20);
+            label2.Size = new Size(95, 15);
             label2.TabIndex = 3;
             label2.Text = "Kode Penjualan :";
             // 
             // panel3
             // 
-            panel3.Controls.Add(dataGridViewLayanan);
-            panel3.Location = new Point(40, 192);
+            panel3.Controls.Add(dataGridViewAlat);
+            panel3.Location = new Point(35, 144);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(351, 491);
+            panel3.Size = new Size(307, 368);
             panel3.TabIndex = 4;
             // 
-            // dataGridViewLayanan
+            // dataGridViewAlat
             // 
-            dataGridViewLayanan.AllowUserToAddRows = false;
-            dataGridViewLayanan.AllowUserToDeleteRows = false;
-            dataGridViewLayanan.AllowUserToResizeColumns = false;
-            dataGridViewLayanan.AllowUserToResizeRows = false;
-            dataGridViewLayanan.BackgroundColor = Color.White;
-            dataGridViewLayanan.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewAlat.AllowUserToAddRows = false;
+            dataGridViewAlat.AllowUserToDeleteRows = false;
+            dataGridViewAlat.AllowUserToResizeColumns = false;
+            dataGridViewAlat.AllowUserToResizeRows = false;
+            dataGridViewAlat.BackgroundColor = Color.White;
+            dataGridViewAlat.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.LimeGreen;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
@@ -131,35 +134,52 @@
             dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridViewLayanan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewLayanan.ColumnHeadersHeight = 35;
-            dataGridViewLayanan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewLayanan.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn3, Column4 });
-            dataGridViewLayanan.Dock = DockStyle.Top;
-            dataGridViewLayanan.EnableHeadersVisualStyles = false;
-            dataGridViewLayanan.Location = new Point(0, 0);
-            dataGridViewLayanan.Name = "dataGridViewLayanan";
-            dataGridViewLayanan.RowHeadersVisible = false;
-            dataGridViewLayanan.RowHeadersWidth = 51;
-            dataGridViewLayanan.Size = new Size(351, 491);
-            dataGridViewLayanan.TabIndex = 0;
+            dataGridViewAlat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewAlat.ColumnHeadersHeight = 35;
+            dataGridViewAlat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewAlat.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn3, Column4 });
+            dataGridViewAlat.Dock = DockStyle.Top;
+            dataGridViewAlat.EnableHeadersVisualStyles = false;
+            dataGridViewAlat.Location = new Point(0, 0);
+            dataGridViewAlat.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewAlat.Name = "dataGridViewAlat";
+            dataGridViewAlat.RowHeadersVisible = false;
+            dataGridViewAlat.RowHeadersWidth = 51;
+            dataGridViewAlat.Size = new Size(307, 368);
+            dataGridViewAlat.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewTextBoxColumn3.HeaderText = "Nama Alat Pertanian";
+            dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // Column4
+            // 
+            Column4.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Column4.HeaderText = "Harga";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.Width = 62;
             // 
             // panel1
             // 
-            panel1.Controls.Add(dataGridViewSukuCadang);
-            panel1.Location = new Point(408, 192);
+            panel1.Controls.Add(dataGridViewProduk);
+            panel1.Location = new Point(357, 144);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(351, 491);
+            panel1.Size = new Size(307, 368);
             panel1.TabIndex = 5;
             // 
-            // dataGridViewSukuCadang
+            // dataGridViewProduk
             // 
-            dataGridViewSukuCadang.AllowUserToAddRows = false;
-            dataGridViewSukuCadang.AllowUserToDeleteRows = false;
-            dataGridViewSukuCadang.AllowUserToResizeColumns = false;
-            dataGridViewSukuCadang.AllowUserToResizeRows = false;
-            dataGridViewSukuCadang.BackgroundColor = Color.White;
-            dataGridViewSukuCadang.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewProduk.AllowUserToAddRows = false;
+            dataGridViewProduk.AllowUserToDeleteRows = false;
+            dataGridViewProduk.AllowUserToResizeColumns = false;
+            dataGridViewProduk.AllowUserToResizeRows = false;
+            dataGridViewProduk.BackgroundColor = Color.White;
+            dataGridViewProduk.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.LimeGreen;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -167,25 +187,41 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridViewSukuCadang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewSukuCadang.ColumnHeadersHeight = 35;
-            dataGridViewSukuCadang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewSukuCadang.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn6, Column2 });
-            dataGridViewSukuCadang.Dock = DockStyle.Top;
-            dataGridViewSukuCadang.EnableHeadersVisualStyles = false;
-            dataGridViewSukuCadang.Location = new Point(0, 0);
-            dataGridViewSukuCadang.Name = "dataGridViewSukuCadang";
-            dataGridViewSukuCadang.RowHeadersVisible = false;
-            dataGridViewSukuCadang.RowHeadersWidth = 51;
-            dataGridViewSukuCadang.Size = new Size(351, 491);
-            dataGridViewSukuCadang.TabIndex = 1;
+            dataGridViewProduk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewProduk.ColumnHeadersHeight = 35;
+            dataGridViewProduk.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewProduk.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn6, Column2 });
+            dataGridViewProduk.Dock = DockStyle.Top;
+            dataGridViewProduk.EnableHeadersVisualStyles = false;
+            dataGridViewProduk.Location = new Point(0, 0);
+            dataGridViewProduk.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewProduk.Name = "dataGridViewProduk";
+            dataGridViewProduk.RowHeadersVisible = false;
+            dataGridViewProduk.RowHeadersWidth = 51;
+            dataGridViewProduk.Size = new Size(307, 368);
+            dataGridViewProduk.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewTextBoxColumn6.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewTextBoxColumn6.HeaderText = "Nama Produk";
+            dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Harga";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 125;
             // 
             // panel2
             // 
             panel2.Controls.Add(dataGridViewPesanan);
-            panel2.Location = new Point(828, 192);
+            panel2.Location = new Point(724, 144);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(330, 491);
+            panel2.Size = new Size(289, 368);
             panel2.TabIndex = 6;
             // 
             // dataGridViewPesanan
@@ -210,12 +246,12 @@
             dataGridViewPesanan.Dock = DockStyle.Top;
             dataGridViewPesanan.EnableHeadersVisualStyles = false;
             dataGridViewPesanan.Location = new Point(0, 0);
+            dataGridViewPesanan.Margin = new Padding(3, 2, 3, 2);
             dataGridViewPesanan.Name = "dataGridViewPesanan";
             dataGridViewPesanan.RowHeadersVisible = false;
             dataGridViewPesanan.RowHeadersWidth = 51;
-            dataGridViewPesanan.Size = new Size(330, 491);
+            dataGridViewPesanan.Size = new Size(289, 368);
             dataGridViewPesanan.TabIndex = 1;
-            dataGridViewPesanan.CellContentClick += dataGridViewPesanan_CellContentClick;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -230,7 +266,7 @@
             Column1.HeaderText = "Qty";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 59;
+            Column1.Width = 49;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -238,7 +274,7 @@
             dataGridViewTextBoxColumn2.HeaderText = "Harga";
             dataGridViewTextBoxColumn2.MinimumWidth = 6;
             dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.Width = 77;
+            dataGridViewTextBoxColumn2.Width = 62;
             // 
             // Hapus
             // 
@@ -255,105 +291,109 @@
             panel4.Controls.Add(label10);
             panel4.Controls.Add(label9);
             panel4.Controls.Add(label7);
-            panel4.Location = new Point(828, 739);
+            panel4.Location = new Point(724, 554);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(330, 44);
+            panel4.Size = new Size(289, 33);
             panel4.TabIndex = 2;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.ForeColor = Color.Transparent;
-            label10.Location = new Point(105, 12);
+            label10.Location = new Point(92, 9);
             label10.Name = "label10";
-            label10.Size = new Size(0, 20);
+            label10.Size = new Size(0, 15);
             label10.TabIndex = 2;
-            label10.Click += label10_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.ForeColor = Color.White;
-            label9.Location = new Point(101, 11);
+            label9.Location = new Point(88, 8);
             label9.Name = "label9";
-            label9.Size = new Size(0, 20);
+            label9.Size = new Size(0, 15);
             label9.TabIndex = 1;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.White;
-            label7.Location = new Point(9, 11);
+            label7.Location = new Point(8, 8);
             label7.Name = "label7";
-            label7.Size = new Size(90, 20);
+            label7.Size = new Size(70, 15);
             label7.TabIndex = 0;
             label7.Text = "Total Harga:";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(40, 739);
+            comboBox1.Location = new Point(35, 554);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(351, 28);
+            comboBox1.Size = new Size(308, 23);
             comboBox1.TabIndex = 7;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(408, 739);
+            comboBox2.Location = new Point(357, 554);
+            comboBox2.Margin = new Padding(3, 2, 3, 2);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(351, 28);
+            comboBox2.Size = new Size(308, 23);
             comboBox2.TabIndex = 8;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(408, 820);
+            textBox3.Location = new Point(357, 615);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(351, 27);
+            textBox3.Size = new Size(308, 23);
             textBox3.TabIndex = 9;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(40, 709);
+            label3.Location = new Point(35, 532);
             label3.Name = "label3";
-            label3.Size = new Size(196, 20);
+            label3.Size = new Size(156, 15);
             label3.TabIndex = 10;
             label3.Text = "Alat Pertanian Yang Disewa :\r\n";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(408, 709);
+            label4.Location = new Point(357, 532);
             label4.Name = "label4";
-            label4.Size = new Size(142, 20);
+            label4.Size = new Size(113, 15);
             label4.TabIndex = 11;
             label4.Text = "Produk Yang Dibeli :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(408, 797);
+            label5.Location = new Point(357, 598);
             label5.Name = "label5";
-            label5.Size = new Size(55, 20);
+            label5.Size = new Size(45, 15);
             label5.TabIndex = 12;
             label5.Text = "Jumlah";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(40, 140);
+            label6.Location = new Point(35, 105);
             label6.Name = "label6";
-            label6.Size = new Size(56, 20);
+            label6.Size = new Size(44, 15);
             label6.TabIndex = 13;
             label6.Text = "Kasir   :";
             // 
             // comboBox3
             // 
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(170, 137);
+            comboBox3.Location = new Point(149, 103);
+            comboBox3.Margin = new Padding(3, 2, 3, 2);
             comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(205, 28);
+            comboBox3.Size = new Size(180, 23);
             comboBox3.TabIndex = 14;
             // 
             // button1
@@ -363,9 +403,10 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(109, 889);
+            button1.Location = new Point(95, 667);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(191, 35);
+            button1.Size = new Size(167, 26);
             button1.TabIndex = 15;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -377,12 +418,13 @@
             button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(469, 889);
+            button2.Location = new Point(410, 667);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(191, 35);
+            button2.Size = new Size(167, 26);
             button2.TabIndex = 16;
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += button2_Click_1;
             // 
             // button3
             // 
@@ -391,61 +433,34 @@
             button3.Cursor = Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(920, 889);
+            button3.Location = new Point(805, 667);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(130, 35);
+            button3.Size = new Size(114, 26);
             button3.TabIndex = 17;
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            button3.Click += button3_Click_1;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(828, 788);
+            label8.Location = new Point(724, 591);
             label8.Name = "label8";
-            label8.Size = new Size(46, 20);
+            label8.Size = new Size(36, 15);
             label8.TabIndex = 19;
             label8.Text = "Bayar";
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(828, 811);
+            textBox4.Location = new Point(724, 608);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(330, 27);
+            textBox4.Size = new Size(289, 23);
             textBox4.TabIndex = 18;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewTextBoxColumn3.HeaderText = "Nama Alat Pertanian";
-            dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // Column4
-            // 
-            Column4.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Column4.HeaderText = "Harga";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.Width = 77;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            dataGridViewTextBoxColumn6.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewTextBoxColumn6.HeaderText = "Nama Produk";
-            dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Harga";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
             // 
             // V_Transaksi
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label8);
             Controls.Add(textBox4);
@@ -468,13 +483,14 @@
             Controls.Add(label1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "V_Transaksi";
-            Size = new Size(1185, 970);
-            Load += V_LayananServis_Load;
+            Size = new Size(1037, 728);
+            Load += V_Transaksi_Load;
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewLayanan).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewAlat).EndInit();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewSukuCadang).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProduk).EndInit();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewPesanan).EndInit();
             panel4.ResumeLayout(false);
@@ -490,9 +506,9 @@
         private Label label1;
         private Label label2;
         private Panel panel3;
-        private DataGridView dataGridViewLayanan;
+        private DataGridView dataGridViewAlat;
         private Panel panel1;
-        private DataGridView dataGridViewSukuCadang;
+        private DataGridView dataGridViewProduk;
         private Panel panel2;
         private DataGridView dataGridViewPesanan;
         private ComboBox comboBox1;

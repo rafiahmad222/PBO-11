@@ -7,7 +7,7 @@
     <Compile Update="Views\FormDetailTransaksi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\FormSukuCadang.cs">
+    <Compile Update="Views\FormTambahProduk.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FormTambahKategori.cs">

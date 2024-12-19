@@ -11,16 +11,16 @@ namespace PBO_Projek.Model
     public class M_Transaksi
     {
         [Key]
-        public int Id_Servis { get; set; }
+        public int Id_Transaksi { get; set; }
         [Required]
-        public string Nama_Pemilik { get; set; }
+        public string Nama_Pembeli { get; set; }
         [Required]
-        public string No_Kendaraan { get; set; }
+        public string Kode_Penjualan { get; set; }
         [ForeignKey("M_Kasir")]
         public int Id_Kasir { get; set; }
         [Required]
         public decimal Total_Harga { get; set; }
-        public DateTime Tanggal_Servis { get; set; }
+        public DateTime Tanggal_Transaksi { get; set; }
     }
 }
 

@@ -14,12 +14,12 @@ namespace PBO_Projek.Controller
     public class C_Transaksi : Connector
     {
         C_Homepage Controller;
-        V_Transaksi Servis;
+        V_Transaksi TransaksiView;
 
-        public C_Transaksi(C_Homepage controller, V_Transaksi servis)
+        public C_Transaksi(C_Homepage controller, V_Transaksi transaksiView)
         {
             Controller = controller;
-            this.Servis = servis;
+            this.TransaksiView = transaksiView;
         }
 
         public List<M_Kasir> GetAllKasir()
@@ -56,13 +56,12 @@ namespace PBO_Projek.Controller
             return kasirList;
         }
 
-
-        public List<M_Alat> GetAllLayanan()
+        public List<M_Alat> GetAllAlat()
         {
-            var layananList = new List<M_Alat>();
+            List<M_Alat> alatList = new List<M_Alat>();
             using (var conn = new NpgsqlConnection(addres))
             {
-                string query = "SELECT Id_Layanan, Nama_Layanan, Harga_Layanan FROM Data_Layanan";
+                string query = "SELECT Id_Alat, Nama_Alat, Harga_Alat FROM Data_AlatPertanian";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     try
@@ -72,11 +71,11 @@ namespace PBO_Projek.Controller
                         {
                             while (reader.Read())
                             {
-                                layananList.Add(new M_Alat
+                                alatList.Add(new M_Alat
                                 {
-                                    Id_Layanan = reader.GetInt32(0),
-                                    Nama_Layanan = reader.GetString(1),
-                                    Harga_Layanan = reader.GetDecimal(2)
+                                    Id_Alat = reader.GetInt32(reader.GetOrdinal("Id_Alat")),
+                                    Nama_Alat = reader.GetString(reader.GetOrdinal("Nama_Alat")),
+                                    Harga_Alat = reader.GetDecimal(reader.GetOrdinal("Harga_Alat"))
                                 });
                             }
                         }
@@ -87,15 +86,15 @@ namespace PBO_Projek.Controller
                     }
                 }
             }
-            return layananList;
+            return alatList;
         }
 
-        public List<M_Produk> GetAllSukuCadang()
+        public List<M_Produk> GetAllProduk()
         {
-            var sukuCadangList = new List<M_Produk>();
+            var produkList = new List<M_Produk>();
             using (var conn = new NpgsqlConnection(addres))
             {
-                string query = "SELECT Id_Suku_Cadang, Nama_Suku_Cadang, Harga FROM Data_Suku_Cadang";
+                string query = "SELECT Id_Produk, Nama_Produk, Harga FROM Data_Produk";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     try
@@ -105,10 +104,10 @@ namespace PBO_Projek.Controller
                         {
                             while (reader.Read())
                             {
-                                sukuCadangList.Add(new M_Produk
+                                produkList.Add(new M_Produk
                                 {
-                                    Id_Suku_Cadang = reader.GetInt32(0),
-                                    Nama_Suku_Cadang = reader.GetString(1),
+                                    Id_Produk = reader.GetInt32(0),
+                                    Nama_Produk = reader.GetString(1),
                                     Harga = reader.GetDecimal(2)
                                 });
                             }
@@ -120,38 +119,37 @@ namespace PBO_Projek.Controller
                     }
                 }
             }
-            return sukuCadangList;
+            return produkList;
         }
 
-        public int GetStokSukuCadang(int idSukuCadang)
+        public int GetStokProduk(int idProduk)
         {
             using (var conn = new NpgsqlConnection(addres))
             {
-                string query = "SELECT Stok FROM Data_Suku_Cadang WHERE Id_Suku_Cadang = @IdSukuCadang";
+                string query = "SELECT Stok FROM Data_Produk WHERE Id_Produk = @IdProduk";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     try
                     {
                         conn.Open();
-                        cmd.Parameters.AddWithValue("@IdSukuCadang", idSukuCadang);
+                        cmd.Parameters.AddWithValue("@IdProduk", idProduk);
                         var result = cmd.ExecuteScalar();
                         if (result != null && int.TryParse(result.ToString(), out int stok))
                         {
                             return stok;
                         }
-                        return 0; 
+                        return 0;
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine("Error: " + ex.Message);
-                        return 0; 
+                        return 0;
                     }
                 }
             }
         }
 
-
-        public void SimpanServis(M_Transaksi servisHeader, List<M_DetailTransaksi> servisDetails)
+        public void SimpanTransaksi(M_Transaksi transaksiHeader, List<M_DetailTransaksi> transaksiDetails)
         {
             using (var conn = new NpgsqlConnection(addres))
             {
@@ -161,53 +159,53 @@ namespace PBO_Projek.Controller
                     try
                     {
                         string queryHeader = @"
-                    INSERT INTO Data_Servis (Nama_Pemilik, No_Kendaraan, Id_Kasir, Total_Harga, Tanggal_Servis)
-                    VALUES (@NamaPemilik, @NoKendaraan, @IdKasir, @TotalHarga, @TanggalServis)
-                    RETURNING Id_Servis;";
+                INSERT INTO Data_Transaksi (Nama_Pembeli, Kode_Penjualan, Id_Kasir, Total_Harga, Tanggal_Transaksi)
+                VALUES (@NamaPembeli, @KodePenjualan, @IdKasir, @TotalHarga, @TanggalTransaksi)
+                RETURNING Id_Transaksi;";
 
-                        int idServis;
+                        int idTransaksi;
                         using (var cmd = new NpgsqlCommand(queryHeader, conn))
                         {
-                            cmd.Parameters.AddWithValue("@NamaPemilik", servisHeader.Nama_Pemilik);
-                            cmd.Parameters.AddWithValue("@NoKendaraan", servisHeader.No_Kendaraan);
-                            cmd.Parameters.AddWithValue("@IdKasir", M_Kasir.Id); 
-                            cmd.Parameters.AddWithValue("@TotalHarga", servisHeader.Total_Harga);
-                            cmd.Parameters.AddWithValue("@TanggalServis", servisHeader.Tanggal_Servis);
-                            idServis = (int)cmd.ExecuteScalar();
+                            cmd.Parameters.AddWithValue("@NamaPembeli", transaksiHeader.Nama_Pembeli);
+                            cmd.Parameters.AddWithValue("@KodePenjualan", transaksiHeader.Kode_Penjualan);
+                            cmd.Parameters.AddWithValue("@IdKasir", transaksiHeader.Id_Kasir);
+                            cmd.Parameters.AddWithValue("@TotalHarga", transaksiHeader.Total_Harga);
+                            cmd.Parameters.AddWithValue("@TanggalTransaksi", transaksiHeader.Tanggal_Transaksi);
+                            idTransaksi = (int)cmd.ExecuteScalar();
                         }
 
                         string queryDetail = @"
-                    INSERT INTO Detail_Servis (Id_Servis, Id_Layanan, Id_Suku_Cadang, Id_Teknisi, Jumlah, Harga)
-                    VALUES (@IdServis, @IdLayanan, @IdSukuCadang, @IdTeknisi, @Jumlah, @Harga);";
+                INSERT INTO Detail_Transaksi (Id_Transaksi, Id_Alat, Id_Produk, Id_Kasir, Jumlah, Harga)
+                VALUES (@IdTransaksi, @IdAlat, @IdProduk, @IdKasir, @Jumlah, @Harga);";
 
                         string queryUpdateStok = @"
-                    UPDATE Data_Suku_Cadang
-                    SET Stok = Stok - @Jumlah
-                    WHERE Id_Suku_Cadang = @IdSukuCadang AND Stok >= @Jumlah;";
+                UPDATE Data_Produk
+                SET Stok = Stok - @Jumlah
+                WHERE Id_Produk = @IdProduk AND Stok >= @Jumlah;";
 
-                        foreach (var detail in servisDetails)
+                        foreach (var detail in transaksiDetails)
                         {
                             using (var cmdDetail = new NpgsqlCommand(queryDetail, conn))
                             {
-                                cmdDetail.Parameters.AddWithValue("@IdServis", idServis);
-                                cmdDetail.Parameters.AddWithValue("@IdLayanan", detail.Id_Layanan > 0 ? (object)detail.Id_Layanan : DBNull.Value);
-                                cmdDetail.Parameters.AddWithValue("@IdSukuCadang", detail.Id_Suku_Cadang > 0 ? (object)detail.Id_Suku_Cadang : DBNull.Value);
-                                cmdDetail.Parameters.AddWithValue("@IdTeknisi", detail.Id_Teknisi); 
+                                cmdDetail.Parameters.AddWithValue("@IdTransaksi", idTransaksi);
+                                cmdDetail.Parameters.AddWithValue("@IdAlat", detail.Id_Alat > 0 ? (object)detail.Id_Alat : DBNull.Value);
+                                cmdDetail.Parameters.AddWithValue("@IdProduk", detail.Id_Produk > 0 ? (object)detail.Id_Produk : DBNull.Value);
+                                cmdDetail.Parameters.AddWithValue("@IdKasir", detail.Id_Kasir);
                                 cmdDetail.Parameters.AddWithValue("@Jumlah", detail.Jumlah);
-                                cmdDetail.Parameters.AddWithValue("@Harga", detail.Harga);
+                                cmdDetail.Parameters.AddWithValue("@Harga", detail.Total_Harga);
                                 cmdDetail.ExecuteNonQuery();
                             }
 
-                            if (detail.Id_Suku_Cadang > 0)
+                            if (detail.Id_Produk > 0)
                             {
                                 using (var cmdUpdateStok = new NpgsqlCommand(queryUpdateStok, conn))
                                 {
-                                    cmdUpdateStok.Parameters.AddWithValue("@IdSukuCadang", detail.Id_Suku_Cadang);
+                                    cmdUpdateStok.Parameters.AddWithValue("@IdProduk", detail.Id_Produk);
                                     cmdUpdateStok.Parameters.AddWithValue("@Jumlah", detail.Jumlah);
                                     int rowsAffected = cmdUpdateStok.ExecuteNonQuery();
                                     if (rowsAffected == 0)
                                     {
-                                        throw new Exception($"Stok tidak mencukupi untuk suku cadang dengan ID: {detail.Id_Suku_Cadang}");
+                                        throw new Exception($"Stok tidak mencukupi untuk produk dengan ID: {detail.Id_Produk}");
                                     }
                                 }
                             }
@@ -218,13 +216,10 @@ namespace PBO_Projek.Controller
                     catch (Exception ex)
                     {
                         trans.Rollback();
-                        throw new Exception($"Gagal menyimpan servis: {ex.Message}", ex);
+                        throw new Exception($"Gagal menyimpan transaksi: {ex.Message}", ex);
                     }
                 }
             }
         }
-
-
-
     }
 }

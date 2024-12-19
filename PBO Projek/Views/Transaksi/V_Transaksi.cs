@@ -25,7 +25,7 @@ namespace PBO_Projek.Views.Teknisi
             transaksi = new C_Transaksi(Controller, this);
         }
 
-        private void V_LayananServis_Load(object sender, EventArgs e)
+        private void V_Transaksi_Load(object sender, EventArgs e)
         {
             comboboxload();
             ResetForm();
@@ -39,29 +39,29 @@ namespace PBO_Projek.Views.Teknisi
             comboBox3.DisplayMember = "Nama_Kasir";
             comboBox3.ValueMember = "Id_Kasir";
 
-            comboBox1.DataSource = transaksi.GetAllLayanan();
-            comboBox1.DisplayMember = "Nama_Layanan";
-            comboBox1.ValueMember = "Id_Layanan";
+            comboBox1.DataSource = transaksi.GetAllAlat();
+            comboBox1.DisplayMember = "Nama_Alat";
+            comboBox1.ValueMember = "Id_Alat";
 
-            comboBox2.DataSource = transaksi.GetAllSukuCadang();
-            comboBox2.DisplayMember = "Nama_Suku_Cadang";
-            comboBox2.ValueMember = "Id_Suku_Cadang";
+            comboBox2.DataSource = transaksi.GetAllProduk();
+            comboBox2.DisplayMember = "Nama_Produk";
+            comboBox2.ValueMember = "Id_Produk";
 
         }
 
         private void DataGridLoad()
         {
-            var layananlist = transaksi.GetAllLayanan();
-            var sukucadanglist = transaksi.GetAllSukuCadang();
+            var layananlist = transaksi.GetAllAlat();
+            var sukucadanglist = transaksi.GetAllProduk();
 
 
             foreach (var layanan in layananlist)
             {
-                dataGridViewLayanan.Rows.Add(layanan.Nama_Layanan, layanan.Harga_Layanan);
+                dataGridViewAlat.Rows.Add(layanan.Nama_Alat, layanan.Harga_Alat);
             }
             foreach (var sukucadang in sukucadanglist)
             {
-                dataGridViewSukuCadang.Rows.Add(sukucadang.Nama_Suku_Cadang, sukucadang.Harga);
+                dataGridViewProduk.Rows.Add(sukucadang.Nama_Produk, sukucadang.Harga);
             }
 
         }
@@ -70,11 +70,11 @@ namespace PBO_Projek.Views.Teknisi
         {
             dataGridViewPesanan.Columns.Clear();
 
-            dataGridViewPesanan.Columns.Add("ID_Layanan", "ID Layanan");
-            dataGridViewPesanan.Columns.Add("ID_SukuCadang", "ID Suku Cadang");
+            dataGridViewPesanan.Columns.Add("ID_Alat", "ID Alat");
+            dataGridViewPesanan.Columns.Add("ID_Produk", "ID Produk");
 
-            dataGridViewPesanan.Columns["ID_Layanan"].Visible = false;
-            dataGridViewPesanan.Columns["ID_SukuCadang"].Visible = false;
+            dataGridViewPesanan.Columns["ID_Alat"].Visible = false;
+            dataGridViewPesanan.Columns["ID_Produk"].Visible = false;
 
             dataGridViewPesanan.Columns.Add("NamaItem", "Nama Item");
             dataGridViewPesanan.Columns.Add("Jumlah", "Jumlah");
@@ -82,8 +82,8 @@ namespace PBO_Projek.Views.Teknisi
 
             DataGridViewButtonColumn colHapus = new DataGridViewButtonColumn();
             colHapus.Name = "Hapus";
-            colHapus.HeaderText = ""; 
-            colHapus.Text = "X"; 
+            colHapus.HeaderText = "";
+            colHapus.Text = "X";
             colHapus.UseColumnTextForButtonValue = true;
             dataGridViewPesanan.Columns.Add(colHapus);
 
@@ -106,13 +106,13 @@ namespace PBO_Projek.Views.Teknisi
 
                     if (isLayanan)
                     {
-                        MessageBox.Show("Layanan ini sudah dipilih!", "Duplikat Layanan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Alat ini sudah dipilih!", "Duplikat Alat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
                         int jumlahSebelumnya = Convert.ToInt32(row.Cells["Jumlah"].Value);
                         row.Cells["Jumlah"].Value = jumlahSebelumnya + jumlah;
-                        row.Cells["Harga"].Value = hargaSatuan * (jumlahSebelumnya + jumlah);
+                        row.Cells["Harga"].Value = hargaSatuan;
                     }
                     break;
                 }
@@ -156,7 +156,7 @@ namespace PBO_Projek.Views.Teknisi
 
             label10.Text = $"Total: {totalHarga:C}";
 
-            return totalHarga; 
+            return totalHarga;
         }
 
 
@@ -180,15 +180,15 @@ namespace PBO_Projek.Views.Teknisi
             var selectedLayanan = (M_Alat)comboBox1.SelectedItem;
             if (selectedLayanan == null) return;
 
-            string namaItem = selectedLayanan.Nama_Layanan;
-            decimal harga = selectedLayanan.Harga_Layanan;
+            string namaItem = selectedLayanan.Nama_Alat;
+            decimal harga = selectedLayanan.Harga_Alat;
             int jumlah = 1;
 
-            TambahKeGrid(selectedLayanan.Nama_Layanan, 1, selectedLayanan.Harga_Layanan, true, idLayanan: selectedLayanan.Id_Layanan);
+            TambahKeGrid(selectedLayanan.Nama_Alat, 1, selectedLayanan.Harga_Alat, true, idLayanan: selectedLayanan.Id_Alat);
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             var selectedSukuCadang = (M_Produk)comboBox2.SelectedItem;
             if (selectedSukuCadang == null) return;
@@ -200,112 +200,14 @@ namespace PBO_Projek.Views.Teknisi
                 return;
             }
 
-            TambahKeGrid(selectedSukuCadang.Nama_Suku_Cadang, jumlah, selectedSukuCadang.Harga, false, idSukuCadang: selectedSukuCadang.Id_Suku_Cadang);
+            TambahKeGrid(selectedSukuCadang.Nama_Produk, jumlah, selectedSukuCadang.Harga, false, idSukuCadang: selectedSukuCadang.Id_Produk);
         }
 
         private bool ValidasiStok(int idSukuCadang, int jumlah)
         {
-            int stokTersedia = transaksi.GetStokSukuCadang(idSukuCadang);
+            int stokTersedia = transaksi.GetStokProduk(idSukuCadang);
             return stokTersedia >= jumlah;
         }
-
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Validasi input
-                if (string.IsNullOrWhiteSpace(textBox2.Text))
-                {
-                    MessageBox.Show("Nama Pemilik harus diisi!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (string.IsNullOrWhiteSpace(textBox1.Text))
-                {
-                    MessageBox.Show("Nomor Kendaraan harus diisi!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (dataGridViewPesanan.Rows.Count == 0)
-                {
-                    MessageBox.Show("Tidak ada pesanan yang bisa diselesaikan!!!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (string.IsNullOrWhiteSpace(textBox4.Text) || !decimal.TryParse(textBox4.Text, out decimal jumlahBayar))
-                {
-                    MessageBox.Show("Masukkan nominal bayar yang valid!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                decimal totalHarga = HitungTotalHarga();
-
-                if (jumlahBayar < totalHarga)
-                {
-                    MessageBox.Show("Jumlah bayar harus lebih besar atau sama dengan total harga!", "Pembayaran Kurang", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                decimal kembalian = jumlahBayar - totalHarga;
-
-                M_Transaksi servisHeader = new M_Transaksi
-                {
-                    Nama_Pemilik = textBox2.Text.Trim(),
-                    No_Kendaraan = textBox1.Text.Trim(),
-                    Total_Harga = totalHarga,
-                    Tanggal_Servis = DateTime.Now
-                };
-
-                if (comboBox3.SelectedValue == null || !int.TryParse(comboBox3.SelectedValue.ToString(), out int idTeknisi))
-                {
-                    MessageBox.Show("Teknisi harus dipilih!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                servisDetails.Clear();
-                foreach (DataGridViewRow row in dataGridViewPesanan.Rows)
-                {
-                    if (!row.IsNewRow)
-                    {
-                        var detail = new M_DetailTransaksi
-                        {
-                            Id_Layanan = row.Cells["ID_Layanan"].Value != null ? Convert.ToInt32(row.Cells["ID_Layanan"].Value) : 0,
-                            Id_Suku_Cadang = row.Cells["ID_SukuCadang"].Value != null ? Convert.ToInt32(row.Cells["ID_SukuCadang"].Value) : 0,
-                            Id_Teknisi = idTeknisi, 
-                            Jumlah = Convert.ToInt32(row.Cells["Jumlah"].Value),
-                            Harga = Convert.ToDecimal(row.Cells["Harga"].Value)
-                        };
-
-                        if (detail.Id_Suku_Cadang != 0 && !ValidasiStok(detail.Id_Suku_Cadang, detail.Jumlah))
-                        {
-                            MessageBox.Show($"Stok tidak mencukupi untuk suku cadang dengan ID: {detail.Id_Suku_Cadang}",
-                                            "Stok Tidak Cukup", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-
-                        servisDetails.Add(detail);
-                    }
-                }
-
-                transaksi.SimpanServis(servisHeader, servisDetails);
-                MessageBox.Show($"Transaksi berhasil !!!\n\nTotal Harga: {totalHarga:C}\nJumlah Bayar: {jumlahBayar:C}\nKembalian: {kembalian:C}",
-                                "Transaksi Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ResetForm();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-
-
-
-
-
-
-
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
@@ -337,5 +239,95 @@ namespace PBO_Projek.Views.Teknisi
                 }
             }
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                // Validasi input
+                if (string.IsNullOrWhiteSpace(textBox2.Text))
+                {
+                    MessageBox.Show("Nama Pembeli harus diisi!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(textBox1.Text))
+                {
+                    MessageBox.Show("Kode penjualan harus diisi!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (dataGridViewPesanan.Rows.Count == 0)
+                {
+                    MessageBox.Show("Tidak ada pesanan yang bisa diselesaikan!!!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(textBox4.Text) || !decimal.TryParse(textBox4.Text, out decimal jumlahBayar))
+                {
+                    MessageBox.Show("Masukkan nominal bayar yang valid!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                decimal totalHarga = HitungTotalHarga();
+
+                if (jumlahBayar < totalHarga)
+                {
+                    MessageBox.Show("Jumlah bayar harus lebih besar atau sama dengan total harga!", "Pembayaran Kurang", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                decimal kembalian = jumlahBayar - totalHarga;
+
+                M_Transaksi servisHeader = new M_Transaksi
+                {
+                    Nama_Pembeli = textBox2.Text.Trim(),
+                    Kode_Penjualan = textBox1.Text.Trim(),
+                    Total_Harga = totalHarga,
+                    Tanggal_Transaksi = DateTime.Now
+                };
+
+                if (comboBox3.SelectedValue == null || !int.TryParse(comboBox3.SelectedValue.ToString(), out int idkasir))
+                {
+                    MessageBox.Show("Kasir harus dipilih!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                servisDetails.Clear();
+                foreach (DataGridViewRow row in dataGridViewPesanan.Rows)
+                {
+                    if (!row.IsNewRow)
+                    {
+                        var detail = new M_DetailTransaksi
+                        {
+                            Id_Alat = row.Cells["ID_Layanan"].Value != null ? Convert.ToInt32(row.Cells["ID_Layanan"].Value) : 0,
+                            Id_Produk = row.Cells["ID_SukuCadang"].Value != null ? Convert.ToInt32(row.Cells["ID_SukuCadang"].Value) : 0,
+                            Id_Kasir = idkasir,
+                            Jumlah = Convert.ToInt32(row.Cells["Jumlah"].Value),
+                            Total_Harga = Convert.ToDecimal(row.Cells["Harga"].Value)
+                        };
+
+                        if (detail.Id_Produk != 0 && !ValidasiStok(detail.Id_Produk, detail.Jumlah))
+                        {
+                            MessageBox.Show($"Stok tidak mencukupi untuk suku cadang dengan ID: {detail.Id_Produk}",
+                                            "Stok Tidak Cukup", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+
+                        servisDetails.Add(detail);
+                    }
+                }
+
+                transaksi.SimpanTransaksi(servisHeader, servisDetails);
+                MessageBox.Show($"Transaksi berhasil !!!\n\nTotal Harga: {totalHarga:C}\nJumlah Bayar: {jumlahBayar:C}\nKembalian: {kembalian:C}",
+                                "Transaksi Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

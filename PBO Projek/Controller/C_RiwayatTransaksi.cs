@@ -16,7 +16,6 @@ namespace PBO_Projek.Controller
         C_Homepage Controller;
         V_RiwayatTransaksi Riwayat;
 
-
         public C_RiwayatTransaksi(C_Homepage controller, V_RiwayatTransaksi riwayat)
         {
             Controller = controller;
@@ -30,13 +29,12 @@ namespace PBO_Projek.Controller
             using (var conn = new NpgsqlConnection(addres))
             {
                 string query = @"
-                SELECT ds.Id_Servis, ds.Nama_Pemilik, ds.No_Kendaraan, 
-                    ds.Id_Kasir, k.Nama_Kasir, 
-                    ds.Total_Harga, ds.Tanggal_Servis
-                FROM Data_Servis ds
-                LEFT JOIN Data_Kasir k ON ds.Id_Kasir = k.Id_Kasir  
-                ORDER BY ds.Tanggal_Servis DESC";
-
+                SELECT dt.Id_Transaksi, dt.Nama_Pemilik, dt.No_Kendaraan, 
+                    dt.Id_Kasir, k.Nama_Kasir, 
+                    dt.Total_Harga, dt.Tanggal_Transaksi
+                FROM Data_Transaksi dt
+                LEFT JOIN Data_Kasir k ON dt.Id_Kasir = k.Id_Kasir  
+                ORDER BY dt.Tanggal_Transaksi DESC";
 
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
@@ -49,12 +47,12 @@ namespace PBO_Projek.Controller
                             {
                                 riwayatList.Add(new M_Transaksi
                                 {
-                                    Id_Servis = reader.GetInt32(reader.GetOrdinal("Id_Servis")),
-                                    Nama_Pemilik = reader.GetString(reader.GetOrdinal("Nama_Pemilik")),
-                                    No_Kendaraan = reader.GetString(reader.GetOrdinal("No_Kendaraan")),
+                                    Id_Transaksi = reader.GetInt32(reader.GetOrdinal("Id_Transaksi")),
+                                    Nama_Pembeli = reader.GetString(reader.GetOrdinal("Nama_Pemilik")),
+                                    Kode_Penjualan = reader.GetString(reader.GetOrdinal("No_Kendaraan")),
                                     Id_Kasir = reader.GetInt32(reader.GetOrdinal("Id_Kasir")),
                                     Total_Harga = reader.GetDecimal(reader.GetOrdinal("Total_Harga")),
-                                    Tanggal_Servis = reader.GetDateTime(reader.GetOrdinal("Tanggal_Servis"))
+                                    Tanggal_Transaksi = reader.GetDateTime(reader.GetOrdinal("Tanggal_Transaksi"))
                                 });
                             }
                         }
@@ -70,23 +68,23 @@ namespace PBO_Projek.Controller
             return riwayatList;
         }
 
-        public List<M_DetailTransaksi> GetDetailServis(int idServis)
+        public List<M_DetailTransaksi> GetDetailTransaksi(int idTransaksi)
         {
             var detailList = new List<M_DetailTransaksi>();
 
             using (var conn = new NpgsqlConnection(addres))
             {
                 string query = @"
-            SELECT ds.Id_Detail_Servis, ds.Id_Servis, ds.Id_Layanan, ds.Id_Suku_Cadang, 
-                ds.Jumlah, ds.Harga, ds.Id_Teknisi, t.Nama_Teknisi, sc.Nama_Suku_Cadang
-            FROM Detail_Servis ds
-            LEFT JOIN Data_Teknisi t ON ds.Id_Teknisi = t.Id_Teknisi
-            LEFT JOIN Data_Suku_Cadang sc ON ds.Id_Suku_Cadang = sc.Id_Suku_Cadang
-            WHERE ds.Id_Servis = @IdServis";
+                SELECT dt.Id_Detail_Transaksi, dt.Id_Transaksi, dt.Id_Layanan, dt.Id_Produk, 
+                    dt.Jumlah, dt.Harga, dt.Id_Teknisi, t.Nama_Teknisi, p.Nama_Produk
+                FROM Detail_Transaksi dt
+                LEFT JOIN Data_Teknisi t ON dt.Id_Teknisi = t.Id_Teknisi
+                LEFT JOIN Data_Produk p ON dt.Id_Produk = p.Id_Produk
+                WHERE dt.Id_Transaksi = @IdTransaksi";
 
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@IdServis", idServis);
+                    cmd.Parameters.AddWithValue("@IdTransaksi", idTransaksi);
 
                     try
                     {
@@ -97,15 +95,14 @@ namespace PBO_Projek.Controller
                             {
                                 detailList.Add(new M_DetailTransaksi
                                 {
-                                    Id_Detail_Servis = reader.GetInt32(reader.GetOrdinal("Id_Detail_Servis")),
-                                    Id_Servis = reader.GetInt32(reader.GetOrdinal("Id_Servis")),
-                                    Id_Layanan = reader.IsDBNull(reader.GetOrdinal("Id_Layanan")) ? 0 : reader.GetInt32(reader.GetOrdinal("Id_Layanan")),
-                                    Id_Suku_Cadang = reader.IsDBNull(reader.GetOrdinal("Id_Suku_Cadang")) ? 0 : reader.GetInt32(reader.GetOrdinal("Id_Suku_Cadang")),
+                                    Id_Detail_Transaksi = reader.GetInt32(reader.GetOrdinal("Id_Detail_Transaksi")),
+                                    Id_Transaksi = reader.GetInt32(reader.GetOrdinal("Id_Transaksi")),
+                                    Id_Alat = reader.GetInt32(reader.GetOrdinal("Id_Alat")),
+                                    Id_Produk = reader.GetInt32(reader.GetOrdinal("Id_Produk")),
+                                    Id_Kasir = reader.GetInt32(reader.GetOrdinal("Id_Kasir")),
                                     Jumlah = reader.GetInt32(reader.GetOrdinal("Jumlah")),
-                                    Harga = reader.GetDecimal(reader.GetOrdinal("Harga")),
-                                    Id_Teknisi = reader.IsDBNull(reader.GetOrdinal("Id_Teknisi")) ? 0 : reader.GetInt32(reader.GetOrdinal("Id_Teknisi")) 
+                                    Total_Harga = reader.GetDecimal(reader.GetOrdinal("Total_Harga")),
                                 });
-
                             }
                         }
                     }
@@ -124,24 +121,23 @@ namespace PBO_Projek.Controller
         {
             try
             {
-                var servisList = GetRiwayatTransaksi();
+                var transaksiList = GetRiwayatTransaksi();
                 Riwayat.dgvLay.Rows.Clear();
                 int no = 1;
-                foreach (var servis in servisList)
+                foreach (var transaksi in transaksiList)
                 {
-                    string namaKasir = GetNamaKasirById(servis.Id_Kasir);
+                    string namaKasir = GetNamaKasirById(transaksi.Id_Kasir);
 
                     Riwayat.dgvLay.Rows.Add(
                         no++,
-                        servis.Id_Servis,
-                        servis.Nama_Pemilik,
-                        servis.No_Kendaraan,
+                        transaksi.Id_Transaksi,
+                        transaksi.Nama_Pembeli,
+                        transaksi.Kode_Penjualan,
                         namaKasir,
-                        servis.Tanggal_Servis.ToString("dd/MM/yyyy"),
-                        servis.Total_Harga.ToString("C")
+                        transaksi.Tanggal_Transaksi.ToString("dd/MM/yyyy"),
+                        transaksi.Total_Harga.ToString("C")
                     );
                 }
-
             }
             catch (Exception ex)
             {
@@ -149,26 +145,25 @@ namespace PBO_Projek.Controller
             }
         }
 
-        public void LoadDetailServis(int idServis, DataGridView dgvDetail)
+        public void LoadDetailTransaksi(int idTransaksi, DataGridView dgvDetail)
         {
             try
             {
-                var detailList = GetDetailServis(idServis);
+                var detailList = GetDetailTransaksi(idTransaksi);
                 dgvDetail.Rows.Clear();
 
                 foreach (var detail in detailList)
                 {
-                    string namaTeknisi = detail.Id_Teknisi != 0 ? GetNamaTeknisiById(detail.Id_Teknisi) : "-";
-                    string namaLayanan = detail.Id_Layanan != 0 ? GetNamaLayananById(detail.Id_Layanan) : "-";
-                    string namaSukuCadang = detail.Id_Suku_Cadang != 0 ? GetNamaSukuCadangById(detail.Id_Suku_Cadang) : "-";
-
+                    string namaKasir = detail.Id_Kasir != 0 ? GetNamaKasirById(detail.Id_Kasir) : "-";
+                    string namaAlat = detail.Id_Alat != 0 ? GetNamaAlatById(detail.Id_Alat) : "-";
+                    string namaProduk = detail.Id_Produk != 0 ? GetNamaProdukById(detail.Id_Produk) : "-";
                     dgvDetail.Rows.Add(
-                        idServis,
-                        namaTeknisi, 
-                        namaLayanan,
-                        namaSukuCadang,
+                        idTransaksi,
+                        namaKasir,
+                        namaAlat,
+                        namaProduk,
                         detail.Jumlah,
-                        detail.Harga.ToString("C")
+                        detail.Total_Harga.ToString("C")
                     );
                 }
             }
@@ -178,23 +173,21 @@ namespace PBO_Projek.Controller
             }
         }
 
-
-
-        private string GetNamaTeknisiById(int idTeknisi)
+        private string GetNamaAlatById(int idAlat)
         {
-            string namaTeknisi = string.Empty;
+            string namaAlat = string.Empty;
 
             using (var conn = new NpgsqlConnection(addres))
             {
-                string query = "SELECT Nama_Teknisi FROM Data_Teknisi WHERE Id_Teknisi = @IdTeknisi";
+                string query = "SELECT Nama_Alat FROM Data_Alat WHERE Id_Alat = @IdAlat";
 
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@IdTeknisi", idTeknisi);
+                    cmd.Parameters.AddWithValue("@IdAlat", idAlat);
                     try
                     {
                         conn.Open();
-                        namaTeknisi = cmd.ExecuteScalar().ToString();
+                        namaAlat = cmd.ExecuteScalar().ToString();
                     }
                     catch (Exception ex)
                     {
@@ -203,7 +196,7 @@ namespace PBO_Projek.Controller
                 }
             }
 
-            return namaTeknisi;
+            return namaAlat;
         }
 
         private string GetNamaKasirById(int idKasir)
@@ -232,22 +225,21 @@ namespace PBO_Projek.Controller
             return namaKasir;
         }
 
-        public string GetNamaLayananById(int idLayanan)
+        public string GetNamaProdukById(int idProduk)
         {
-            string namaLayanan = string.Empty;
+            string namaProduk = string.Empty;
 
             using (var conn = new NpgsqlConnection(addres))
             {
-                string query = "SELECT Nama_Layanan FROM Data_Layanan WHERE Id_Layanan = @IdLayanan";
+                string query = "SELECT Nama_Produk FROM Data_Produk WHERE Id_Produk = @IdProduk";
 
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@IdLayanan", idLayanan);
-
+                    cmd.Parameters.AddWithValue("@IdProduk", idProduk);
                     try
                     {
                         conn.Open();
-                        namaLayanan = cmd.ExecuteScalar().ToString();
+                        namaProduk = cmd.ExecuteScalar().ToString();
                     }
                     catch (Exception ex)
                     {
@@ -256,55 +248,29 @@ namespace PBO_Projek.Controller
                 }
             }
 
-            return namaLayanan;
-        }
-        public string GetNamaSukuCadangById(int idSukuCadang)
-        {
-            string namaSukuCadang = string.Empty;
-
-            using (var conn = new NpgsqlConnection(addres))
-            {
-                string query = "SELECT Nama_Suku_Cadang FROM Data_Suku_Cadang WHERE Id_Suku_Cadang = @IdSukuCadang";
-
-                using (var cmd = new NpgsqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@IdSukuCadang", idSukuCadang);
-
-                    try
-                    {
-                        conn.Open();
-                        namaSukuCadang = cmd.ExecuteScalar().ToString();
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine("Error: " + ex.Message);
-                    }
-                }
-            }
-
-            return namaSukuCadang;
+            return namaProduk;
         }
 
         public DataTable SearchRiwayatTransaksi(string searchText)
         {
             string query = @"
-    SELECT 
-        ds.Id_Servis, 
-        ds.Nama_Pemilik, 
-        ds.No_Kendaraan, 
-        ds.Id_Kasir, 
-        k.Nama_Kasir, 
-        ds.Total_Harga, 
-        ds.Tanggal_Servis
-    FROM 
-        Data_Servis ds
-    LEFT JOIN 
-        Data_Kasir k ON ds.Id_Kasir = k.Id_Kasir
-    WHERE 
-        LOWER(ds.Nama_Pemilik) LIKE LOWER(@SearchText)
-        OR LOWER(ds.No_Kendaraan) LIKE LOWER(@SearchText)
-    ORDER BY 
-        ds.Tanggal_Servis DESC";
+            SELECT 
+                dt.Id_Transaksi, 
+                dt.Nama_Pemilik, 
+                dt.No_Kendaraan, 
+                dt.Id_Kasir, 
+                k.Nama_Kasir, 
+                dt.Total_Harga, 
+                dt.Tanggal_Transaksi
+            FROM 
+                Data_Transaksi dt
+            LEFT JOIN 
+                Data_Kasir k ON dt.Id_Kasir = k.Id_Kasir
+            WHERE 
+                LOWER(dt.Nama_Pemilik) LIKE LOWER(@SearchText)
+                OR LOWER(dt.No_Kendaraan) LIKE LOWER(@SearchText)
+            ORDER BY 
+                dt.Tanggal_Transaksi DESC";
 
             using (var conn = new NpgsqlConnection(addres))
             {
@@ -326,8 +292,5 @@ namespace PBO_Projek.Controller
                 }
             }
         }
-
-
     }
 }
-

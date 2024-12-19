@@ -40,10 +40,11 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(40, 139);
+            button1.Location = new Point(44, 134);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.RightToLeft = RightToLeft.No;
-            button1.Size = new Size(452, 50);
+            button1.Size = new Size(430, 38);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -55,24 +56,26 @@
             button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(40, 240);
+            button2.Location = new Point(44, 210);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(452, 50);
+            button2.Size = new Size(430, 38);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // V_awal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(button2);
             Controls.Add(button1);
             DoubleBuffered = true;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "V_awal";
-            Size = new Size(529, 413);
+            Size = new Size(517, 341);
             Load += V_awal_Load;
             ResumeLayout(false);
         }

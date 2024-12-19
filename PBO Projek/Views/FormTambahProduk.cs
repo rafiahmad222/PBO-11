@@ -13,13 +13,13 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PBO_Projek.Views
 {
-    public partial class FormSukuCadang : Form
+    public partial class FormTambahProduk : Form
     {
         C_Produk Controller;
         private bool isEditing;
         System.String title = "Mekanik Hunter";
         bool cek = false;
-        public FormSukuCadang(C_Produk controller, bool isEditing = false)
+        public FormTambahProduk(C_Produk controller, bool isEditing = false)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -50,7 +50,7 @@ namespace PBO_Projek.Views
             this.Dispose();
         }
 
-        private void FormSukuCadang_Load(object sender, EventArgs e)
+        private void FormProduk_Load(object sender, EventArgs e)
         {
             var kategorilist = Controller.GetDataKategori();
             comboBox1.DataSource = kategorilist;
@@ -61,12 +61,12 @@ namespace PBO_Projek.Views
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string namaSukuCadang = txtSuku.Text;
+            string namaProduk = txtNamaProduk.Text;
             int idKategori = (int)comboBox1.SelectedValue;
             int stok;
             decimal harga;
             bool stoknya = int.TryParse(txtStok.Text, out stok);
-            bool harganya = decimal.TryParse(txtHarSuk.Text, out harga);
+            bool harganya = decimal.TryParse(txtHargaProduk.Text, out harga);
             if (!stoknya)
             {
                 MessageBox.Show("Stok harus berupa angka!", title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -83,10 +83,10 @@ namespace PBO_Projek.Views
             {
                 idKategori = (int)comboBox1.SelectedValue;
 
-                if (MessageBox.Show("Apakah anda yakin ingin menambah?", "Tambah Suku Cadang", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Apakah anda yakin ingin menambah?", "Tambah Produk", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    Controller.AddSuCa(namaSukuCadang, idKategori, stok, harga);
-                    MessageBox.Show("Data Suku Cadang Berhasil Ditambah", title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Controller.AddProduk(namaProduk, idKategori, stok, harga);
+                    MessageBox.Show("Data Produk Berhasil Ditambah", title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
                     cek = false;
                 }
@@ -100,8 +100,8 @@ namespace PBO_Projek.Views
 
         public void Clear()
         {
-            txtSuku.Clear();
-            txtHarSuk.Clear();
+            txtNamaProduk.Clear();
+            txtHargaProduk.Clear();
             txtStok.Clear();
 
         }
@@ -110,9 +110,9 @@ namespace PBO_Projek.Views
         {
             cek = false;
 
-            if (string.IsNullOrWhiteSpace(txtSuku.Text) ||
+            if (string.IsNullOrWhiteSpace(txtNamaProduk.Text) ||
                 string.IsNullOrWhiteSpace(txtStok.Text) ||
-                string.IsNullOrWhiteSpace(txtHarSuk.Text) ||
+                string.IsNullOrWhiteSpace(txtHargaProduk.Text) ||
                 comboBox1.SelectedValue == null)
             {
                 MessageBox.Show("Isilah semua data, jangan ada yang kosong!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -159,23 +159,23 @@ namespace PBO_Projek.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int idsukucadang;
-            string namaSukuCadang = txtSuku.Text;
+            int idProduk;
+            string namaProduk = txtNamaProduk.Text;
             int idKategori = 0;
             int stok;
             decimal harga;
             try
             {
                 if (string.IsNullOrWhiteSpace(labelid.Text) ||
-                    string.IsNullOrWhiteSpace(txtSuku.Text) ||
+                    string.IsNullOrWhiteSpace(txtNamaProduk.Text) ||
                     comboBox1.SelectedValue == null ||
                     string.IsNullOrWhiteSpace(txtStok.Text) ||
-                    string.IsNullOrWhiteSpace(txtHarSuk.Text))
+                    string.IsNullOrWhiteSpace(txtHargaProduk.Text))
                 {
                     MessageBox.Show("Isilah semua data! Jangan ada yang kosong.", title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (int.TryParse(labelid.Text, out idsukucadang))
+                if (int.TryParse(labelid.Text, out idProduk))
                 {
                     if (comboBox1.SelectedValue != null)
                     {
@@ -191,15 +191,15 @@ namespace PBO_Projek.Views
                         MessageBox.Show("Stok harus berupa angka!", title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
-                    if (!decimal.TryParse(txtHarSuk.Text, out harga))
+                    if (!decimal.TryParse(txtHargaProduk.Text, out harga))
                     {
                         MessageBox.Show("Harga harus berupa angka!", title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
-                    if (MessageBox.Show("Apakah Anda yakin ingin mengedit?", "Edit Suku Cadang", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Apakah Anda yakin ingin mengedit?", "Edit Produk", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        Controller.editSuCa(idsukucadang, namaSukuCadang, idKategori, stok, harga);
-                        MessageBox.Show("Data Suku Cadang berhasil diedit!", title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Controller.EditProduk(idProduk, namaProduk, idKategori, stok, harga);
+                        MessageBox.Show("Data Produk berhasil diedit!", title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         Clear();
                         this.Dispose();

@@ -10,21 +10,18 @@ namespace PBO_Projek.Model
     public class M_Produk
     {
         [Key]
-        public int Id_Suku_Cadang { get; set; }
-
+        public int Id_Produk { get; set; }
         [Required]
-        public string Nama_Suku_Cadang { get; set; }
-
-        [Required]
-        public int Stok { get; set; }
-
+        public string Nama_Produk { get; set; }
         [Required]
         public decimal Harga { get; set; }
-
+        [Required]
+        public int Stok { get; set; }
         [Required]
         public int Id_Kategori { get; set; }
+        public string Nama_Kategori { get; set; }
 
-        public string Nama_Kategori { get; set; } 
+
     }
 
 }

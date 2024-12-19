@@ -14,10 +14,10 @@ namespace PBO_Projek.Views.Homepage
 {
     public partial class V_AlatPertanian : UserControl
     {
-        private string connectionString = "Host=localhost;Database=MekanikHunter;Username=postgres;Password=123";
+        private string connectionString = "Host=localhost;Database=PROJEK_KopMart;Username=postgres;Password=2";
         C_Homepage Controller;
         C_Alat ctrl;
-        string title = "Mekanik Hunter";
+        string title = "Kop-Mart";
         public V_AlatPertanian(C_Homepage controller)
         {
             InitializeComponent();
@@ -26,21 +26,21 @@ namespace PBO_Projek.Views.Homepage
 
         }
 
-        private void V_TambahLayanan_Load(object sender, EventArgs e)
+        private void V_TambahAlat_Load(object sender, EventArgs e)
         {
-            dgvlayanan();
+            dgvAlat();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TambahAlat tambahLayanan = new TambahAlat(ctrl, false);
-            tambahLayanan.ShowDialog();
-            dgvlayanan();
+            TambahAlat tambahAlat = new TambahAlat(ctrl, false);
+            tambahAlat.ShowDialog();
+            dgvAlat();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string query = "SELECT Id_Layanan, Nama_Layanan, Harga_Layanan FROM Data_Layanan WHERE Nama_Layanan LIKE @searchText";
+            string query = "SELECT Id_Alat, Nama_Alat, Harga_Alat FROM Data_Alat WHERE Nama_Alat LIKE @searchText";
             using (var conn = new NpgsqlConnection(connectionString))
             {
                 conn.Open(); using (var cmd = new NpgsqlCommand(query, conn))
@@ -53,29 +53,29 @@ namespace PBO_Projek.Views.Homepage
                     {
                         dataTable.Rows[i]["No"] = i + 1;
                     }
-                    dgvLay.Rows.Clear();
+                    dgvriwayat.Rows.Clear();
                     foreach (DataRow row in dataTable.Rows)
                     {
-                        dgvLay.Rows.Add(row["No"], row["Id_Layanan"], row["Nama_Layanan"], row["Harga_Layanan"]);
+                        dgvriwayat.Rows.Add(row["No"], row["Id_Alat"], row["Nama_Alat"], row["Harga_Alat"]);
                     }
                 }
             }
         }
-        public void dgvlayanan()
+        public void dgvAlat()
         {
             try
             {
-                dgvLay.Rows.Clear();
-                var layananlist = ctrl.GetDataLayanan();
-                if (layananlist != null && layananlist.Count > 0)
+                dgvriwayat.Rows.Clear();
+                var alatlist = ctrl.GetDataAlat();
+                if (alatlist != null && alatlist.Count > 0)
                 {
                     int no = 1;
-                    foreach (var layanan in layananlist)
+                    foreach (var alat in alatlist)
                     {
-                        dgvLay.Rows.Add(no++, layanan.Id_Layanan, layanan.Nama_Layanan, layanan.Harga_Layanan);
+                        dgvriwayat.Rows.Add(no++, alat.Id_Alat, alat.Nama_Alat, alat.Harga_Alat);
                     }
                 }
-                
+
             }
             catch (Exception ex)
             {
@@ -86,15 +86,15 @@ namespace PBO_Projek.Views.Homepage
 
         private void dgvLay_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string colName = dgvLay.Columns[e.ColumnIndex].Name;
+            string colName = dgvriwayat.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
-                TambahAlat layanan = new TambahAlat(ctrl, true);
-                layanan.lblid.Text = dgvLay.Rows[e.RowIndex].Cells[1].Value.ToString();
-                layanan.txtAlat.Text = dgvLay.Rows[e.RowIndex].Cells[2].Value.ToString();
-                layanan.txtHargaAlat.Text = dgvLay.Rows[e.RowIndex].Cells[3].Value.ToString();
-                layanan.ShowDialog();
-                dgvlayanan();
+                TambahAlat alat = new TambahAlat(ctrl, true);
+                alat.lblid.Text = dgvriwayat.Rows[e.RowIndex].Cells[1].Value.ToString();
+                alat.txtAlat.Text = dgvriwayat.Rows[e.RowIndex].Cells[2].Value.ToString();
+                alat.txtHargaAlat.Text = dgvriwayat.Rows[e.RowIndex].Cells[3].Value.ToString();
+                alat.ShowDialog();
+                dgvAlat();
 
             }
         }

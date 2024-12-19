@@ -23,12 +23,7 @@ namespace PBO_Projek.Views
 
         public void LoadDetailServis(int idServis)
         {
-            Controller.LoadDetailServis(idServis, dgvDetail);
-        }
-
-        private void dgvLay_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            Controller.LoadDetailTransaksi(idServis, dgvDetail);
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -15,12 +15,12 @@ namespace PBO_Projek.Controller
     public class C_Alat : Connector
     {
         C_Homepage Controller;
-        V_AlatPertanian tambahLayanan;
+        V_AlatPertanian tambahAlat;
 
         public C_Alat(C_Homepage controller, V_AlatPertanian view)
         {
             this.Controller = controller;
-            this.tambahLayanan = view;
+            this.tambahAlat = view;
         }
         public void Execute_No_Return(NpgsqlCommand cmd)
         {
@@ -32,55 +32,55 @@ namespace PBO_Projek.Controller
             }
         }
 
-        public List<M_Alat> GetDataLayanan()
+        public List<M_Alat> GetDataAlat()
         {
-            List<M_Alat> dtlayanan = new List<M_Alat>();
+            List<M_Alat> dtalat = new List<M_Alat>();
             DataTable query = Execute_With_Return("SELECT Id_Layanan, Nama_Layanan, Harga_Layanan FROM Data_Layanan");
             foreach (DataRow row in query.Rows)
             {
-                M_Alat m_layanan = new M_Alat
+                M_Alat m_alat = new M_Alat
                 {
-                    Id_Layanan = Convert.ToInt32(row["Id_Layanan"]),
-                    Nama_Layanan = row["Nama_Layanan"].ToString(),
-                    Harga_Layanan = Convert.ToDecimal(row["Harga_Layanan"])
+                    Id_Alat = Convert.ToInt32(row["Id_Alat"]),
+                    Nama_Alat = row["Nama_Alat"].ToString(),
+                    Harga_Alat = Convert.ToDecimal(row["Harga_Alat"])
                 };
-                dtlayanan.Add(m_layanan);
+                dtalat.Add(m_alat);
             }
-            return dtlayanan;
+            return dtalat;
         }
 
-        public void addLayanan(string namaLayanan, decimal harlay)
+        public void addAlat(string namaAlat, decimal hargaAlat)
         {
-            string query = @" INSERT INTO Data_Layanan (Nama_Layanan, Harga_Layanan) VALUES (:Nama_Layanan, :Harga_Layanan); ";
+            string query = @" INSERT INTO Data_Layanan (Nama_Alat, Harga_Alat) VALUES (:Nama_Alat, :Harga_Alat); ";
             using (var conn = new NpgsqlConnection(addres))
             {
                 conn.Open();
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue(":Nama_Layanan", namaLayanan);
-                    cmd.Parameters.AddWithValue(":Harga_Layanan", harlay);
+                    cmd.Parameters.AddWithValue(":Nama_Alat", namaAlat);
+                    cmd.Parameters.AddWithValue(":Harga_Alat", hargaAlat);
                     cmd.ExecuteNonQuery();
                 }
             }
         }
-        public void editLayanan(int idlayanan, string namaLayanan, decimal harlay)
+        public void editAlat(int idAlat, string namaAlat, decimal hargaAlat)
         {
-            string query = @"UPDATE data_layanan SET Nama_Layanan = :Nama_Layanan, Harga_Layanan = :Harga_Layanan WHERE Id_Layanan = :Id_Layanan;";
+            string query = @"UPDATE data_layanan SET Nama_Alat = :Nama_Alat, Harga_Alat = :Harga_Alat WHERE Id_Alat = :Id_Alat;";
             using (var conn = new NpgsqlConnection(addres))
             {
                 using (NpgsqlCommand cmd = new NpgsqlCommand(query))
                 {
-                    cmd.Parameters.AddWithValue(":Id_Layanan", idlayanan);
-                    cmd.Parameters.AddWithValue(":Nama_Layanan", namaLayanan);
-                    cmd.Parameters.AddWithValue(":Harga_Layanan", harlay);
+                    cmd.Parameters.AddWithValue(":Id_Alat", idAlat);
+                    cmd.Parameters.AddWithValue(":Nama_Alat", namaAlat);
+                    cmd.Parameters.AddWithValue(":Harga_Alat", hargaAlat);
                     Execute_No_Return(cmd);
                 }
             }
         }
 
-        public DataTable SearchLayanan(string searchText)
+        public DataTable SearchAlat(string searchText)
         {
-            string query = @"SELECT Id_Layanan, Nama_Layanan, Harga_Layanan WHERE Nama_Layanan LIKE @SearchText";
+            string query = @"SELECT Id_Alat, Nama_Alat, Harga_Alat FROM M_Alat WHERE Nama_Alat LIKE @SearchText";
             using (var conn = new NpgsqlConnection(addres))
             {
                 conn.Open();

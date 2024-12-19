@@ -185,26 +185,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bimak\\.nuget\\packages\\": {}
+    "C:\\Users\\rafii\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WPF\\bin\\v8\\": {},
+    "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bimak\\source\\repos\\PBO MEKANIK HUNTER\\pbo-projek\\PBO Projek\\PBO Projek.csproj",
+      "projectUniqueName": "D:\\PBO-11\\PBO-11\\PBO Projek\\PBO Projek.csproj",
       "projectName": "PBO Projek",
-      "projectPath": "C:\\Users\\bimak\\source\\repos\\PBO MEKANIK HUNTER\\pbo-projek\\PBO Projek\\PBO Projek.csproj",
-      "packagesPath": "C:\\Users\\bimak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bimak\\source\\repos\\PBO MEKANIK HUNTER\\pbo-projek\\PBO Projek\\obj\\",
+      "projectPath": "D:\\PBO-11\\PBO-11\\PBO Projek\\PBO Projek.csproj",
+      "packagesPath": "C:\\Users\\rafii\\.nuget\\packages\\",
+      "outputPath": "D:\\PBO-11\\PBO-11\\PBO Projek\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WPF\\bin\\v8\\",
+        "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\bimak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rafii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

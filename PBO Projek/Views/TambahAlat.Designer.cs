@@ -46,62 +46,66 @@
             panel1.BackColor = Color.Black;
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(708, 29);
+            panel1.Size = new Size(625, 22);
             panel1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(12, 44);
+            label1.Location = new Point(10, 33);
             label1.Name = "label1";
-            label1.Size = new Size(230, 23);
+            label1.Size = new Size(192, 20);
             label1.TabIndex = 1;
             label1.Text = "Tambah Alat Pertanian";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 92);
+            label2.Location = new Point(10, 69);
             label2.Name = "label2";
-            label2.Size = new Size(152, 20);
+            label2.Size = new Size(122, 15);
             label2.TabIndex = 2;
             label2.Text = "Nama Alat Pertanian :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 143);
+            label3.Location = new Point(10, 107);
             label3.Name = "label3";
-            label3.Size = new Size(149, 20);
+            label3.Size = new Size(114, 15);
             label3.TabIndex = 3;
             label3.Text = "Harga                        :";
             // 
             // txtAlat
             // 
-            txtAlat.Location = new Point(169, 92);
+            txtAlat.Location = new Point(148, 69);
+            txtAlat.Margin = new Padding(3, 2, 3, 2);
             txtAlat.Name = "txtAlat";
-            txtAlat.Size = new Size(527, 27);
+            txtAlat.Size = new Size(462, 23);
             txtAlat.TabIndex = 4;
             // 
             // txtHargaAlat
             // 
-            txtHargaAlat.Location = new Point(169, 143);
+            txtHargaAlat.Location = new Point(148, 107);
+            txtHargaAlat.Margin = new Padding(3, 2, 3, 2);
             txtHargaAlat.Name = "txtHargaAlat";
-            txtHargaAlat.Size = new Size(527, 27);
+            txtHargaAlat.Size = new Size(462, 23);
             txtHargaAlat.TabIndex = 5;
-            txtHargaAlat.KeyPress += txtHarLay_KeyPress;
+            txtHargaAlat.KeyPress += txtHargaAlat_KeyPress;
             // 
             // button2
             // 
             button2.BackColor = Color.FromArgb(128, 255, 128);
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(452, 205);
+            button2.Location = new Point(396, 154);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(82, 22);
             button2.TabIndex = 7;
             button2.Text = "Tambah";
             button2.UseVisualStyleBackColor = false;
@@ -112,9 +116,10 @@
             button3.BackColor = Color.FromArgb(255, 255, 128);
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(582, 205);
+            button3.Location = new Point(509, 154);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(82, 22);
             button3.TabIndex = 8;
             button3.Text = "Update";
             button3.UseVisualStyleBackColor = false;
@@ -127,9 +132,10 @@
             btnBack.BackgroundImageLayout = ImageLayout.Stretch;
             btnBack.FlatAppearance.BorderSize = 0;
             btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(674, 31);
+            btnBack.Location = new Point(590, 23);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(30, 30);
+            btnBack.Size = new Size(26, 22);
             btnBack.TabIndex = 25;
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
@@ -137,17 +143,17 @@
             // lblid
             // 
             lblid.AutoSize = true;
-            lblid.Location = new Point(15, 205);
+            lblid.Location = new Point(13, 154);
             lblid.Name = "lblid";
-            lblid.Size = new Size(30, 20);
+            lblid.Size = new Size(23, 15);
             lblid.TabIndex = 26;
             lblid.Text = "Eid";
             // 
             // TambahAlat
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(708, 255);
+            ClientSize = new Size(625, 217);
             Controls.Add(lblid);
             Controls.Add(btnBack);
             Controls.Add(button3);
@@ -159,9 +165,11 @@
             Controls.Add(label1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "TambahAlat";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TambahLayanan";
-            Load += TambahLayanan_Load;
+            Load += TambahAlat_Load;
             ResumeLayout(false);
             PerformLayout();
         }

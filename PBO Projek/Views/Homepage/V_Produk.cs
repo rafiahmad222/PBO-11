@@ -25,7 +25,7 @@ namespace PBO_Projek.Views.Homepage
             InitializeComponent();
             Controller = controller;
             csuca = new C_Produk(Controller, this);
-            dgvsukucadang();
+            dgvproduk();
 
         }
 
@@ -41,52 +41,51 @@ namespace PBO_Projek.Views.Homepage
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string colName = dgvSukuCadang.Columns[e.ColumnIndex].Name;
+            string colName = dgvProduk.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
-                FormSukuCadang kategori = new FormSukuCadang(csuca, false);
-                kategori.labelid.Text = dgvSukuCadang.Rows[e.RowIndex].Cells[1].Value.ToString();
-                kategori.txtSuku.Text = dgvSukuCadang.Rows[e.RowIndex].Cells[2].Value.ToString();
-                kategori.txtStok.Text = dgvSukuCadang.Rows[e.RowIndex].Cells[4].Value.ToString();
-                kategori.txtHarSuk.Text = dgvSukuCadang.Rows[e.RowIndex].Cells[5].Value.ToString();
+                FormTambahProduk kategori = new FormTambahProduk(csuca, false);
+                kategori.labelid.Text = dgvProduk.Rows[e.RowIndex].Cells[1].Value.ToString();
+                kategori.txtNamaProduk.Text = dgvProduk.Rows[e.RowIndex].Cells[2].Value.ToString();
+                kategori.txtStok.Text = dgvProduk.Rows[e.RowIndex].Cells[4].Value.ToString();
+                kategori.txtHargaProduk.Text = dgvProduk.Rows[e.RowIndex].Cells[5].Value.ToString();
                 var kategoriList = csuca.GetDataKategori();
                 foreach (var item in kategoriList)
                 {
                     kategori.comboBox1.Items.Add(new { Text = item.Nama_Kategori, Value = item.Id_Kategori });
                 }
-                string selectedKategori = dgvSukuCadang.Rows[e.RowIndex].Cells[3].Value.ToString();
+                string selectedKategori = dgvProduk.Rows[e.RowIndex].Cells[3].Value.ToString();
                 kategori.comboBox1.SelectedIndex = kategori.comboBox1.FindStringExact(selectedKategori);
                 kategori.ShowDialog();
-                dgvsukucadang();
+                dgvproduk();
 
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormSukuCadang sukuCadang = new FormSukuCadang(csuca, true);
-            sukuCadang.ShowDialog();
-            dgvsukucadang();
+            FormTambahProduk produk = new FormTambahProduk(csuca, true);
+            produk.ShowDialog();
+            dgvproduk();
         }
 
-        public void dgvsukucadang()
+        public void dgvproduk()
         {
             try
             {
-                dgvSukuCadang.Rows.Clear();
-                var sukuCadangList = csuca.GetSukuCadang();
-                if (sukuCadangList != null && sukuCadangList.Count > 0)
+                dgvProduk.Rows.Clear();
+                var ProdukList = csuca.GetProduk();
+                if (ProdukList != null && ProdukList.Count > 0)
                 {
                     int no = 1;
-                    foreach (var sukuCadang in sukuCadangList)
+                    foreach (var produk in ProdukList)
                     {
-                        dgvSukuCadang.Rows.Add(no++, sukuCadang.Id_Suku_Cadang, sukuCadang.Nama_Suku_Cadang, sukuCadang.Nama_Kategori, sukuCadang.Stok, sukuCadang.Harga);
+                        dgvProduk.Rows.Add(no++, produk.Id_Produk, produk.Nama_Produk, produk.Nama_Kategori, produk.Stok, produk.Harga);
                     }
                 }
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message, title);
             }
         }
@@ -102,11 +101,11 @@ namespace PBO_Projek.Views.Homepage
         {
             try
             {
-                dgvSukuCadang.Rows.Clear();
-                DataTable dataTable = csuca.SearchSuCa(textBox1.Text);
+                dgvProduk.Rows.Clear();
+                DataTable dataTable = csuca.SearchProduk(textBox1.Text);
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    dgvSukuCadang.Rows.Add(row["No"], row["Id_Suku_Cadang"], row["Nama_Suku_Cadang"], row["Nama_Kategori"], row["Stok"], row["Harga"]);
+                    dgvProduk.Rows.Add(row["No"], row["Id_Suku_Cadang"], row["Nama_Suku_Cadang"], row["Nama_Kategori"], row["Stok"], row["Harga"]);
                 }
             }
             catch (Exception ex)

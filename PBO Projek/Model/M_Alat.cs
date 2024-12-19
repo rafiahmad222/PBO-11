@@ -10,10 +10,10 @@ namespace PBO_Projek.Model
     public class M_Alat
     {
         [Key]
-        public int Id_Layanan { get; set; }
+        public int Id_Alat { get; set; }
         [Required]
-        public string Nama_Layanan { get; set; }
+        public string Nama_Alat { get; set; }
         [Required]
-        public decimal Harga_Layanan { get; set; }
+        public decimal Harga_Alat { get; set; }
     }
 }
